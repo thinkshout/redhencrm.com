@@ -1,0 +1,11 @@
+name = Redhen Organization Groups
+description = Enables group collaboration features for organizations
+package = RedHen
+core = 7.x
+
+; RedHen
+dependencies[] = redhen_org
+dependencies[] = redhen_relation
+
+; Contrib
+dependencies[] = entityreference

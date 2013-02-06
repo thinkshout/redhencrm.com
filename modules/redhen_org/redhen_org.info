@@ -1,0 +1,11 @@
+name = Redhen Organizations
+description = Defines the base organization entity and features.
+package = RedHen
+core = 7.x
+
+dependencies[] = redhen
+
+; Classes
+files[] = includes/redhen_org.entity.inc
+files[] = includes/redhen_org.controller.inc
+files[] = includes/redhen_org_type.entity.inc
