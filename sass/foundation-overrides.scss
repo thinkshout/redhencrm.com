@@ -1,0 +1,350 @@
+// Your custom settings file to override Foundation defaults
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+
+/* COLORS */
+
+$darkred: #8C0000;
+$lightred: #C30000;
+$blue: #004ED6;
+$yellow: #EAA700;
+$tan: #c5c3b2;
+
+/* Typography */
+body {
+  font-family: 'Droid Serif', serif;
+  color: #222;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+	color: $lightred;
+}
+
+h2 {
+	color: $darkred;
+}
+
+h3 {
+	color: #222;
+}
+
+
+h4 {
+  color: $yellow;
+}
+
+/* Header */
+
+#tag {
+	text-align: center;
+}
+
+section {
+	width: 100%;
+  min-height: 900px;
+  overflow: hidden;
+
+  h2 {
+    text-align: center;
+    span {
+      color: #0692cb;
+      font-size: 1.5em;
+      font-weight: 200;
+      background: #e0e0e0;
+      position: relative;
+      padding: 0 0.5em;
+      z-index: 2;
+      display: inline-block;
+      text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1em;
+    }
+  }
+
+  h2:before {
+    border: 1px solid #d2d2d2;
+    border-width: 1px 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    margin-top: -2px;
+    position: relative;
+    top: 1em;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+#intro {
+  background: #c5c3b2;
+}
+
+header {  
+  position: fixed;
+  top: 10px;
+  z-index: 5;
+}
+
+#header {
+  text-align: center;
+
+  #logo {
+    position: relative;
+    z-index: 6;
+  }
+
+  ul#nav {
+    background: #FFF;
+    position: relative;
+    top: -95px;
+
+    li {
+      display: inline-block;
+      width: 24%;
+      text-align: center;
+
+      a {
+        font-size: 1.2em;
+      }
+    }
+
+    li.active {
+
+      a {
+
+      }
+    }
+  }
+}
+
+#slides {
+  position: absolute;
+  top: 10px;
+}
+
+#features {
+  background: $tan;
+  padding: 15em 0;
+  
+  h2 {  
+    span {
+      color: $darkred;
+      font-size: 1.5em;
+      background: $tan;
+      position: relative;
+      padding: 0 0.5em;
+      z-index: 2;
+      display: inline-block;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
+    }
+  }
+
+  h2:before {
+    border: 1px solid $darkred;
+    border-width: 1px 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    margin-top: -2px;
+    position: relative;
+    top: 1em;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .feature {
+    text-align: center;
+
+    .feature-icon {
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: $tan;
+      text-align: center;
+      margin: 0 auto;
+      padding: 2em;
+    }
+
+    h3 {
+      color: $tan;
+    }
+  }
+
+  .panel {
+    background: rgba(0,0,0,0.2);
+    padding: 2em 1em;
+    min-height: 250px;
+    border: 0;
+  }
+}
+
+#developers {
+  background: $tan;
+  padding: 15em 0;
+  
+  h2 {  
+    span {
+      color: $darkred;
+      font-size: 1.5em;
+      background: $tan;
+      position: relative;
+      padding: 0 0.5em;
+      z-index: 2;
+      display: inline-block;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
+    }
+  }
+
+  h2:before {
+    border: 1px solid $darkred;
+    border-width: 1px 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    margin-top: -2px;
+    position: relative;
+    top: 1em;
+    width: 100%;
+    z-index: 1;
+  }
+
+  h4 {
+    color: #333;
+  }
+}
+
+#case-studies {
+  background: $tan;
+  padding: 15em 0;
+  
+  h2 {  
+    span {
+      color: $darkred;
+      font-size: 1.5em;
+      background: $tan;
+      position: relative;
+      padding: 0 0.5em;
+      z-index: 2;
+      display: inline-block;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
+    }
+  }
+
+  h2:before {
+    border: 1px solid $darkred;
+    border-width: 1px 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    margin-top: -2px;
+    position: relative;
+    top: 1em;
+    width: 100%;
+    z-index: 1;
+  }
+
+  h4 {
+    color: #333;
+  }
+}
+
+#testimonials {
+  background: $tan;
+  padding: 15em 0;
+  
+  h2 {  
+    span {
+      color: $darkred;
+      font-size: 1.5em;
+      background: $tan;
+      position: relative;
+      padding: 0 0.5em;
+      z-index: 2;
+      display: inline-block;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
+    }
+  }
+
+  h2:before {
+    border: 1px solid $darkred;
+    border-width: 1px 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    margin-top: -2px;
+    position: relative;
+    top: 1em;
+    width: 100%;
+    z-index: 1;
+  }
+
+  h4 {
+    color: #333;
+  }
+}
+
+#footer {
+
+}
+
+#mask {
+  /* Set rules to fill background  
+  min-height: 100%; 
+  min-width: 100%; 
+  */ 
+
+  /* Set up proportionate scaling */ 
+  width: 100%; 
+
+  /* Set up positioning */ 
+  position: relative; 
+  top: 0; 
+  left: 0; 
+  z-index: 2; 
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.orbit-wrapper {
+  z-index: 1;
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+
+  .slider-nav span { @include opacity(0); @include single-transition(opacity, 400ms); }
+  &:hover .slider-nav span { @include opacity(1); }
+}
+
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 480px) {
+  #devs {
+    padding-left: 10em;
+    padding-right: 8em;
+    text-align: center;
+  }
+
+  #share {
+    padding-left: 8em;
+    padding-right: 10em;
+    text-align: center;
+  }
+
+
+}
+
