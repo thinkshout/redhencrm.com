@@ -21,6 +21,28 @@
 
 	<script src="javascripts/foundation/modernizr.foundation.js"></script>
 
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+    /*
+    *  How to use the Feed Control to grab, parse and display feeds.
+    */
+    
+    google.load("feeds", "1");
+    
+    function OnLoad() {
+      // Create a feed control
+      var feedControl = new google.feeds.FeedControl();
+    
+      // Add two feeds.
+      feedControl.addFeed("http://thinkshout.com/taxonomy/term/46/feed", "RedHen Updates");
+    
+      // Draw it.
+      feedControl.draw(document.getElementById("feed"));
+    }
+    
+    google.setOnLoadCallback(OnLoad);
+    </script>
+
 </head>
 <body>
 
@@ -190,6 +212,7 @@
 
 	<section id="footer">
 
+		<div id="feed"></div>
 
 	</section>	
 
@@ -213,6 +236,7 @@
 	<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
 	<script src="javascripts/foundation/jquery.foundation.topbar.js"></script>
 	<script src="javascripts/foundation/jquery.placeholder.js"></script>
+
 
 	<!-- Load ScrollTo -->
 	<script type="text/javascript" src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
@@ -244,7 +268,7 @@
          fluid: true                         // or set a aspect ratio for content slides (ex: '4x3')
        });
 
-			 $('#nav').magellan();
+	   //$('#nav').magellan();
     });
   </script>
 </body>
