@@ -35,7 +35,7 @@
     
       // Add two feeds.
       feedControl.addFeed("http://thinkshout.com/taxonomy/term/46/feed", "RedHen Updates");
-    
+
       // Draw it.
       feedControl.draw(document.getElementById("feed"));
     }
@@ -46,49 +46,34 @@
 </head>
 <body>
 
-	<header>
-		<div class="row">
-			<div class="nine mobile-four columns centered" id="header">
-	  		<a href="#intro" id="logo"><img src="images/redhencrm-logo.png" alt="RedHen CRM"></a>
-				<ul id="nav" data-magellan-expedition>
-  				<li data-magellan-arrival='features'><a href="#features">Features</a></li>
-  				<li data-magellan-arrival='community'><a href="#developers">Community</a></li>
-  				<li data-magellan-arrival='case-studies'><a href="#case-studies">Case Studies</a></li>
-  				<li data-magellan-arrival='testimonials'><a href="#testimonials">Testimonials</a></li>
-				</ul>
-			</div>
-		</div>
-	</header>
+	<!---->
+  <header>
+  	<div class="row">
+  			<div class="five columns" style="text-align:center;">
+  				<a href="#intro"><img src="images/redhencrm-logo.png" alt="RedHen CRM"></a>
+  			</div>
+    		<div class="seven columns">
+  				<ul id="nav" class="nav-bar" data-magellan-expedition>
+  					<li data-magellan-arrival='features'><a href="#features">Features</a></li>
+   					<li data-magellan-arrival='case-studies'><a href="#case-studies">Case Studies</a></li>
+   					<li data-magellan-arrival='community'><a href="#developers">Community</a></li>
+   					<li data-magellan-arrival='testimonials'><a href="#testimonials">Testimonials</a></li>			
+   				</ul>
+   			</div>
+   	</div>
+  </header>
 
-
-	
-
-
-	<!--
-	<section id="punch">
-		<div class="row">
-			<hr />
-			<div id="tag" class="eleven mobile-four columns centered">
-				<h1>Your Content, Your Contacts, Your Business</h1>
-				<h3><i>Some eggs should be kept in one basket.</i></h3>
-			</div>
-			<hr />
-		</div>
-	</section>
-	-->
   <section id="intro">
 	<div id="mask"><img src="images/mask.png"></div>
-	<div class="row">
-	  <div id="slides">
-	    <!-- First Band (Slider) -->
-  	    <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->  
-  	    <div id="featured">
-  	      <div data-caption="#captionOne"><img src="images/slides/open-source.png" /></div>
-  	      <div data-caption="#captionTwo"><img src="images/slides/engagement.png" /></div>
-  	      <div data-caption="#captionThree"><img src="images/slides/enterprise-integrations.png" /></div>
-  	      <div data-caption="#captionFour"><img src="images/slides/association-management.png" /></div>
-  	      <div data-caption="#captionFive"><img src="images/slides/fundraising.png" /></div>
-  	    </div>
+	<div id="slides">
+	  <!-- First Band (Slider) -->
+  	  <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->  
+  	  <div id="featured">
+  	    <div><img src="images/slides/open-source.png" /></div>
+  	    <div><img src="images/slides/engagement.png" /></div>
+  	    <div><img src="images/slides/enterprise-integrations.png" /></div>
+  	    <div><img src="images/slides/association-management.png" /></div>
+  	    <div><img src="images/slides/fundraising.png" /></div>
   	  </div>
   	</div>
   </section>
@@ -140,15 +125,19 @@
 	  </div>
 	  <div class="row">
 	  	<div class="twelve columns">
-	  	  	<h3>Mission Investors Exchange</h3>
-	  	  	<img  class="feature-icon" src="http://thinkshout.com/sites/default/files/styles/portfolio_large_home/public/images/project/recent/MIE%20updated%20portfolio%20large.jpg">
-	  	    <h4>When Seattle based PRI Makers Network and Harvard based More for Mission decided to merge and rebrand as Mission Investors Exchange, ThinkShout was engaged to re-invent their combined website on Drupal 7 and deploy a tightly integrated CRM system.</h4>
-	  	    <a class="large button" href="http://thinkshout.com/portfolio/mission-investors-exchange" alt="MIE's using RedHen">Read the Full Story</a>
+	  		<div class="six mobile-four columns">
+	  			<img  class="feature-icon" src="http://thinkshout.	com/sites/default/files/styles/portfolio_large_home/public/images/project/recent/MIE%20updated%20portfolio%20large.jpg">
+	  		</div>
+	  		<div class="six mobile-four columns">
+	  		 	<h3>Mission Investors Exchange</h3>
+	  		  <p>When Seattle based PRI Makers Network and Harvard based More for Mission decided to merge and rebrand as Mission Investors Exchange, ThinkShout was engagedto 	re-invent their combined website on Drupal 7 and deploy a tightly integrated CRM system.</p>
+	  		  <a class="large button" href="http://thinkshout.com/portfolio/mission-investors-exchange" alt="MIE's using RedHen">Read the Full Story</a>
+	  		</div>
 	  	</div>
 	  </div>
   </section>
   
-	<section id="developers" data-magellan-destination='developers'>
+	<section id="developers" data-magellan-destination='community'>
 	  <div class="row">
 	  	<div class="eight mobile-four columns centered">
 	  	  <h2><span>Community</span></h2>
@@ -156,12 +145,12 @@
 	  </div>
 	  <div class="row">
 	  	<div class="twelve columns">
-	  	  <div class="six columns" id="devs"> 
+	  	  <div class="five columns" id="devs"> 
 	  	  	<h3>Developers</h3>
 	  	    <h4>RedHen CRM is fully open-sourced with the code living in the RedHen project on Drupal.org.</h4>
 	  	    <a class="large button" href="http://drupal.org/project/redhen" alt="RedHen CRM Drupal Project Page">Get Started Today</a>
 	  	  </div>
-	  	  <div class="six columns" id="share">
+	  	  <div class="five columns" id="share">
 	  	  	<h3>Stay in touch</h3>
 	  	  	<h4>Get the latest news on releases and updates for RedHen.</h4>
 	  	    <!-- Begin MailChimp Signup Form -->
@@ -202,19 +191,13 @@
 	  	</div>
 	  </div>
 	  <div class="row">
-	  	<div class="twelve columns">
+	  	<div class="six columns centered">
 	  	    <h4>RedHen CRM is a project of ThinkShout.  Helping progressive organizations achieve their goals using open source technologies, ThinkShout treats their business and nonprofit clients as partners. Our motivation comes from knowing we make the world a better place.See what ThinkShout is doing with RedHen.</h4>
 	  	    <a class="large button" href="http://thinkshout.com/blog/category/redhen" alt="Learn more about RedHen">Learn more about RedHen</a>
 	  	  </div>
-
 	  </div>
+	  <div id="feed"></div>
   </section>
-
-	<section id="footer">
-
-		<div id="feed"></div>
-
-	</section>	
 
 	<!-- Included JS Files (Uncompressed) -->
 	<script src="javascripts/foundation/jquery.js"></script>
@@ -268,7 +251,7 @@
          fluid: true                         // or set a aspect ratio for content slides (ex: '4x3')
        });
 
-	   //$('#nav').magellan();
+	   $('#nav').magellan();
     });
   </script>
 </body>

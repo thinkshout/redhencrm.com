@@ -44,8 +44,9 @@ h4 {
 
 /* Header */
 
-#tag {
+.tag {
 	text-align: center;
+  padding: 1em 0 0;
 }
 
 section {
@@ -82,58 +83,105 @@ section {
     width: 100%;
     z-index: 1;
   }
+
+
 }
 
 #intro {
   background: #c5c3b2;
 }
 
-header {  
+#logo {
   position: fixed;
-  top: 10px;
-  z-index: 5;
+  top: 0;
+  z-index: 6;
+  text-align: center;
 }
 
-#header {
-  text-align: center;
+header {  
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 5;
+  background: #FFF;
 
-  #logo {
-    position: relative;
-    z-index: 6;
+  .nav-bar {
+    height: 40px;
+    background: #FFF;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0;
+    float: right;
   }
 
-  ul#nav {
-    background: #FFF;
+  .nav-bar > li {
+    float: left;
+    display: block;
     position: relative;
-    top: -95px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-right: none;
+    line-height: 38px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
 
-    li {
-      display: inline-block;
-      width: 24%;
-      text-align: center;
+  .nav-bar > li:first-child {
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+  }
 
-      a {
-        font-size: 1.2em;
-      }
-    }
+  .nav-bar > li:last-child {
+    border-right: 0;
+    -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
+  }
 
-    li.active {
+  .nav-bar > li.active {
+    background: #2ba6cb;
+    border-color: #2284a1;
+  }
 
-      a {
+  .nav-bar > li.active > a {
+    color: white;
+    cursor: default;
+  }
 
-      }
-    }
+  .nav-bar > li.active:hover {
+    background: #efefef;
+    cursor: default;
+  }
+
+  .nav-bar > li:hover {
+    background: #e0e0e0;
+  }
+
+  .nav-bar > li > a:first-child {
+    padding: 0 8px;
+  }
+
+  .nav-bar > li > a {
+    color: $darkred;
+  }
+
+  .nav-bar > li ul {
+    margin-bottom: 0;
   }
 }
 
 #slides {
-  position: absolute;
-  top: 10px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 #features {
   background: $tan;
-  padding: 15em 0;
+  padding: 10em 0;
   
   h2 {  
     span {
@@ -177,7 +225,7 @@ header {
     }
 
     h3 {
-      color: $tan;
+      color: $darkred;
     }
   }
 
@@ -187,11 +235,15 @@ header {
     min-height: 250px;
     border: 0;
   }
+
+  img {
+    border: 5px solid #e0e0e0;
+  }
 }
 
 #developers {
   background: $tan;
-  padding: 15em 0;
+  padding: 10em 0;
   
   h2 {  
     span {
@@ -223,17 +275,28 @@ header {
   h4 {
     color: #333;
   }
+
+  #share, #devs {
+    border-radius: 50%;
+    background: #FFF;
+    text-align: center;
+    padding: 20% 5em;
+    margin-bottom: 3em;
+  }
+
+
 }
 
-#case-studies {
-  background: $tan;
-  padding: 15em 0;
+#case-studies,
+#about {
+  background: #dfeff9;
+  padding: 10em 0;
   
   h2 {  
     span {
       color: $darkred;
       font-size: 1.5em;
-      background: $tan;
+      background: #dfeff9;
       position: relative;
       padding: 0 0.5em;
       z-index: 2;
@@ -258,12 +321,17 @@ header {
 
   h4 {
     color: #333;
+  }
+
+  img {
+    border: 5px solid #e0e0e0;
+    text-align: center;
   }
 }
 
 #testimonials {
   background: $tan;
-  padding: 15em 0;
+  padding: 10em 0;
   
   h2 {  
     span {
@@ -297,8 +365,8 @@ header {
   }
 }
 
-#footer {
-
+#about {
+  text-align: center;
 }
 
 #mask {
@@ -311,7 +379,7 @@ header {
   width: 100%; 
 
   /* Set up positioning */ 
-  position: relative; 
+  position: absolute; 
   top: 0; 
   left: 0; 
   z-index: 2; 
@@ -333,18 +401,8 @@ header {
 /* MEDIA QUERIES */
 
 @media all and (min-width: 480px) {
-  #devs {
-    padding-left: 10em;
-    padding-right: 8em;
-    text-align: center;
-  }
-
-  #share {
-    padding-left: 8em;
-    padding-right: 10em;
-    text-align: center;
-  }
-
-
+  
+  #devs {margin-right: 3em; }
+  
 }
 

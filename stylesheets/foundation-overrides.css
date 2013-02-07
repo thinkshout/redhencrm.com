@@ -2699,7 +2699,7 @@ div.orbit-wrapper span.rotator {
   position: absolute;
   top: 0;
   left: -20px;
-  background: url('../images/foundation/orbit/rotator-black.png?1359409275') no-repeat;
+  background: url('../images/foundation/orbit/rotator-black.png?1360174051') no-repeat;
   z-index: 3;
 }
 /* line 27, ../../../../../Users/brett/.rvm/gems/ruby-1.9.3-p286/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_orbit.scss */
@@ -2721,7 +2721,7 @@ div.orbit-wrapper span.mask {
 div.orbit-wrapper span.mask.move {
   width: 40px;
   left: 0;
-  background: url('../images/foundation/orbit/timer-black.png?1359409275') repeat 0 0;
+  background: url('../images/foundation/orbit/timer-black.png?1360174051') repeat 0 0;
 }
 /* line 32, ../../../../../Users/brett/.rvm/gems/ruby-1.9.3-p286/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper span.pause {
@@ -2731,13 +2731,13 @@ div.orbit-wrapper span.pause {
   position: absolute;
   top: 0;
   left: 0;
-  background: url('../images/foundation/orbit/pause-black.png?1359409275') no-repeat;
+  background: url('../images/foundation/orbit/pause-black.png?1360174051') no-repeat;
   z-index: 4;
   opacity: 0;
 }
 /* line 33, ../../../../../Users/brett/.rvm/gems/ruby-1.9.3-p286/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper span.pause.active {
-  background: url('../images/foundation/orbit/pause-black.png?1359409275') no-repeat 0 -40px;
+  background: url('../images/foundation/orbit/pause-black.png?1360174051') no-repeat 0 -40px;
 }
 /* line 35, ../../../../../Users/brett/.rvm/gems/ruby-1.9.3-p286/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.timer:hover span.pause, div.orbit-wrapper div.timer:focus span.pause, div.orbit-wrapper span.pause.active {
@@ -2784,24 +2784,24 @@ div.orbit-wrapper div.slider-nav span {
 }
 /* line 48, ../../../../../Users/brett/.rvm/gems/ruby-1.9.3-p286/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.slider-nav span.right {
-  background: url('../images/foundation/orbit/right-arrow.png?1359409275');
+  background: url('../images/foundation/orbit/right-arrow.png?1360174051');
   background-size: 100%;
   right: 0;
 }
 /* line 49, ../../../../../Users/brett/.rvm/gems/ruby-1.9.3-p286/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.slider-nav span.left {
-  background: url('../images/foundation/orbit/left-arrow.png?1359409275');
+  background: url('../images/foundation/orbit/left-arrow.png?1360174051');
   background-size: 100%;
   left: 0;
 }
 
 /* line 54, ../../../../../Users/brett/.rvm/gems/ruby-1.9.3-p286/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_orbit.scss */
 .lt-ie9 div.orbit-wrapper div.slider-nav span.right {
-  background: url('../images/foundation/orbit/right-arrow-small.png?1359409275');
+  background: url('../images/foundation/orbit/right-arrow-small.png?1360174051');
 }
 /* line 55, ../../../../../Users/brett/.rvm/gems/ruby-1.9.3-p286/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_orbit.scss */
 .lt-ie9 div.orbit-wrapper div.slider-nav span.left {
-  background: url('../images/foundation/orbit/left-arrow-small.png?1359409275');
+  background: url('../images/foundation/orbit/left-arrow-small.png?1360174051');
 }
 
 /* Bullet Nav ---------------------- */
@@ -2822,7 +2822,7 @@ ul.orbit-bullets li {
   cursor: pointer;
   color: #999999;
   text-indent: -9999px;
-  background: url('../images/foundation/orbit/bullets.jpg?1359409275') no-repeat 4px 0;
+  background: url('../images/foundation/orbit/bullets.jpg?1360174051') no-repeat 4px 0;
   width: 13px;
   height: 12px;
   overflow: hidden;
@@ -5969,21 +5969,22 @@ h4 {
 
 /* Header */
 /* line 47, ../sass/foundation-overrides.scss */
-#tag {
+.tag {
   text-align: center;
+  padding: 1em 0 0;
 }
 
-/* line 51, ../sass/foundation-overrides.scss */
+/* line 52, ../sass/foundation-overrides.scss */
 section {
   width: 100%;
   min-height: 900px;
   overflow: hidden;
 }
-/* line 56, ../sass/foundation-overrides.scss */
+/* line 57, ../sass/foundation-overrides.scss */
 section h2 {
   text-align: center;
 }
-/* line 58, ../sass/foundation-overrides.scss */
+/* line 59, ../sass/foundation-overrides.scss */
 section h2 span {
   color: #0692cb;
   font-size: 1.5em;
@@ -5996,7 +5997,7 @@ section h2 span {
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 1em;
 }
-/* line 72, ../sass/foundation-overrides.scss */
+/* line 73, ../sass/foundation-overrides.scss */
 section h2:before {
   border: 1px solid #d2d2d2;
   border-width: 1px 0;
@@ -6011,56 +6012,108 @@ section h2:before {
   z-index: 1;
 }
 
-/* line 87, ../sass/foundation-overrides.scss */
+/* line 90, ../sass/foundation-overrides.scss */
 #intro {
   background: #c5c3b2;
 }
 
-/* line 91, ../sass/foundation-overrides.scss */
+/* line 94, ../sass/foundation-overrides.scss */
+#logo {
+  position: fixed;
+  top: 0;
+  z-index: 6;
+  text-align: center;
+}
+
+/* line 101, ../sass/foundation-overrides.scss */
 header {
   position: fixed;
-  top: 10px;
+  width: 100%;
+  top: 0px;
   z-index: 5;
-}
-
-/* line 97, ../sass/foundation-overrides.scss */
-#header {
-  text-align: center;
-}
-/* line 100, ../sass/foundation-overrides.scss */
-#header #logo {
-  position: relative;
-  z-index: 6;
-}
-/* line 105, ../sass/foundation-overrides.scss */
-#header ul#nav {
   background: #FFF;
+}
+/* line 108, ../sass/foundation-overrides.scss */
+header .nav-bar {
+  height: 40px;
+  background: #FFF;
+  margin-left: 0;
+  margin-top: 20px;
+  padding: 0;
+  float: right;
+}
+/* line 117, ../sass/foundation-overrides.scss */
+header .nav-bar > li {
+  float: left;
+  display: block;
   position: relative;
-  top: -95px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-right: none;
+  line-height: 38px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
-/* line 110, ../sass/foundation-overrides.scss */
-#header ul#nav li {
-  display: inline-block;
-  width: 24%;
-  text-align: center;
+/* line 131, ../sass/foundation-overrides.scss */
+header .nav-bar > li:first-child {
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
 }
-/* line 115, ../sass/foundation-overrides.scss */
-#header ul#nav li a {
-  font-size: 1.2em;
+/* line 137, ../sass/foundation-overrides.scss */
+header .nav-bar > li:last-child {
+  border-right: 0;
+  -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+/* line 144, ../sass/foundation-overrides.scss */
+header .nav-bar > li.active {
+  background: #2ba6cb;
+  border-color: #2284a1;
+}
+/* line 149, ../sass/foundation-overrides.scss */
+header .nav-bar > li.active > a {
+  color: white;
+  cursor: default;
+}
+/* line 154, ../sass/foundation-overrides.scss */
+header .nav-bar > li.active:hover {
+  background: #efefef;
+  cursor: default;
+}
+/* line 159, ../sass/foundation-overrides.scss */
+header .nav-bar > li:hover {
+  background: #e0e0e0;
+}
+/* line 163, ../sass/foundation-overrides.scss */
+header .nav-bar > li > a:first-child {
+  padding: 0 8px;
+}
+/* line 167, ../sass/foundation-overrides.scss */
+header .nav-bar > li > a {
+  color: #8c0000;
+}
+/* line 171, ../sass/foundation-overrides.scss */
+header .nav-bar > li ul {
+  margin-bottom: 0;
 }
 
-/* line 129, ../sass/foundation-overrides.scss */
+/* line 176, ../sass/foundation-overrides.scss */
 #slides {
-  position: absolute;
-  top: 10px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-/* line 134, ../sass/foundation-overrides.scss */
+/* line 182, ../sass/foundation-overrides.scss */
 #features {
   background: #c5c3b2;
-  padding: 15em 0;
+  padding: 10em 0;
 }
-/* line 139, ../sass/foundation-overrides.scss */
+/* line 187, ../sass/foundation-overrides.scss */
 #features h2 span {
   color: #8c0000;
   font-size: 1.5em;
@@ -6071,7 +6124,7 @@ header {
   display: inline-block;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
 }
-/* line 151, ../sass/foundation-overrides.scss */
+/* line 199, ../sass/foundation-overrides.scss */
 #features h2:before {
   border: 1px solid #8c0000;
   border-width: 1px 0;
@@ -6085,11 +6138,11 @@ header {
   width: 100%;
   z-index: 1;
 }
-/* line 165, ../sass/foundation-overrides.scss */
+/* line 213, ../sass/foundation-overrides.scss */
 #features .feature {
   text-align: center;
 }
-/* line 168, ../sass/foundation-overrides.scss */
+/* line 216, ../sass/foundation-overrides.scss */
 #features .feature .feature-icon {
   display: block;
   width: 100px;
@@ -6100,24 +6153,28 @@ header {
   margin: 0 auto;
   padding: 2em;
 }
-/* line 179, ../sass/foundation-overrides.scss */
+/* line 227, ../sass/foundation-overrides.scss */
 #features .feature h3 {
-  color: #c5c3b2;
+  color: #8c0000;
 }
-/* line 184, ../sass/foundation-overrides.scss */
+/* line 232, ../sass/foundation-overrides.scss */
 #features .panel {
   background: rgba(0, 0, 0, 0.2);
   padding: 2em 1em;
   min-height: 250px;
   border: 0;
 }
+/* line 239, ../sass/foundation-overrides.scss */
+#features img {
+  border: 5px solid #e0e0e0;
+}
 
-/* line 192, ../sass/foundation-overrides.scss */
+/* line 244, ../sass/foundation-overrides.scss */
 #developers {
   background: #c5c3b2;
-  padding: 15em 0;
+  padding: 10em 0;
 }
-/* line 197, ../sass/foundation-overrides.scss */
+/* line 249, ../sass/foundation-overrides.scss */
 #developers h2 span {
   color: #8c0000;
   font-size: 1.5em;
@@ -6128,7 +6185,7 @@ header {
   display: inline-block;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
 }
-/* line 209, ../sass/foundation-overrides.scss */
+/* line 261, ../sass/foundation-overrides.scss */
 #developers h2:before {
   border: 1px solid #8c0000;
   border-width: 1px 0;
@@ -6142,29 +6199,40 @@ header {
   width: 100%;
   z-index: 1;
 }
-/* line 223, ../sass/foundation-overrides.scss */
+/* line 275, ../sass/foundation-overrides.scss */
 #developers h4 {
   color: #333;
 }
-
-/* line 228, ../sass/foundation-overrides.scss */
-#case-studies {
-  background: #c5c3b2;
-  padding: 15em 0;
+/* line 279, ../sass/foundation-overrides.scss */
+#developers #share, #developers #devs {
+  border-radius: 50%;
+  background: #FFF;
+  text-align: center;
+  padding: 20% 5em;
+  margin-bottom: 3em;
 }
-/* line 233, ../sass/foundation-overrides.scss */
-#case-studies h2 span {
+
+/* line 291, ../sass/foundation-overrides.scss */
+#case-studies,
+#about {
+  background: #dfeff9;
+  padding: 10em 0;
+}
+/* line 296, ../sass/foundation-overrides.scss */
+#case-studies h2 span,
+#about h2 span {
   color: #8c0000;
   font-size: 1.5em;
-  background: #c5c3b2;
+  background: #dfeff9;
   position: relative;
   padding: 0 0.5em;
   z-index: 2;
   display: inline-block;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
 }
-/* line 245, ../sass/foundation-overrides.scss */
-#case-studies h2:before {
+/* line 308, ../sass/foundation-overrides.scss */
+#case-studies h2:before,
+#about h2:before {
   border: 1px solid #8c0000;
   border-width: 1px 0;
   content: "";
@@ -6177,17 +6245,24 @@ header {
   width: 100%;
   z-index: 1;
 }
-/* line 259, ../sass/foundation-overrides.scss */
-#case-studies h4 {
+/* line 322, ../sass/foundation-overrides.scss */
+#case-studies h4,
+#about h4 {
   color: #333;
 }
+/* line 326, ../sass/foundation-overrides.scss */
+#case-studies img,
+#about img {
+  border: 5px solid #e0e0e0;
+  text-align: center;
+}
 
-/* line 264, ../sass/foundation-overrides.scss */
+/* line 332, ../sass/foundation-overrides.scss */
 #testimonials {
   background: #c5c3b2;
-  padding: 15em 0;
+  padding: 10em 0;
 }
-/* line 269, ../sass/foundation-overrides.scss */
+/* line 337, ../sass/foundation-overrides.scss */
 #testimonials h2 span {
   color: #8c0000;
   font-size: 1.5em;
@@ -6198,7 +6273,7 @@ header {
   display: inline-block;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
 }
-/* line 281, ../sass/foundation-overrides.scss */
+/* line 349, ../sass/foundation-overrides.scss */
 #testimonials h2:before {
   border: 1px solid #8c0000;
   border-width: 1px 0;
@@ -6212,12 +6287,17 @@ header {
   width: 100%;
   z-index: 1;
 }
-/* line 295, ../sass/foundation-overrides.scss */
+/* line 363, ../sass/foundation-overrides.scss */
 #testimonials h4 {
   color: #333;
 }
 
-/* line 304, ../sass/foundation-overrides.scss */
+/* line 368, ../sass/foundation-overrides.scss */
+#about {
+  text-align: center;
+}
+
+/* line 372, ../sass/foundation-overrides.scss */
 #mask {
   /* Set rules to fill background  
   min-height: 100%; 
@@ -6226,7 +6306,7 @@ header {
   /* Set up proportionate scaling */
   width: 100%;
   /* Set up positioning */
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
@@ -6234,14 +6314,14 @@ header {
   text-align: center;
 }
 
-/* line 322, ../sass/foundation-overrides.scss */
+/* line 390, ../sass/foundation-overrides.scss */
 .orbit-wrapper {
   z-index: 1;
   position: relative;
   top: 0;
   margin: 0 auto;
 }
-/* line 328, ../sass/foundation-overrides.scss */
+/* line 396, ../sass/foundation-overrides.scss */
 .orbit-wrapper .slider-nav span {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -6250,7 +6330,7 @@ header {
   -o-transition: opacity 400ms;
   transition: opacity 400ms;
 }
-/* line 329, ../sass/foundation-overrides.scss */
+/* line 397, ../sass/foundation-overrides.scss */
 .orbit-wrapper:hover .slider-nav span {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -6258,17 +6338,8 @@ header {
 
 /* MEDIA QUERIES */
 @media all and (min-width: 480px) {
-  /* line 336, ../sass/foundation-overrides.scss */
+  /* line 405, ../sass/foundation-overrides.scss */
   #devs {
-    padding-left: 10em;
-    padding-right: 8em;
-    text-align: center;
-  }
-
-  /* line 342, ../sass/foundation-overrides.scss */
-  #share {
-    padding-left: 8em;
-    padding-right: 10em;
-    text-align: center;
+    margin-right: 3em;
   }
 }
