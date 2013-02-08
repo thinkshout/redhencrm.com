@@ -30,15 +30,17 @@
     google.load("feeds", "1");
 
     function OnLoad() {
-      // Create a feed control
+      // Grab the blog feed.
       var feedControl = new google.feeds.FeedControl();
-
-      // Add two feeds.
+      feedControl.setNumEntries(3);
       feedControl.addFeed("http://thinkshout.com/taxonomy/term/46/feed", "From the Blog");
-      feedControl.addFeed("http://drupal.org/node/1068848/release/feed", "Recent Releases");
+      feedControl.draw(document.getElementById("blog-feed"));
 
-      // Draw it.
-      feedControl.draw(document.getElementById("feed"));
+      // Releases feed. Note we only want one item.
+      var feedControl1 = new google.feeds.FeedControl();
+      feedControl1.setNumEntries(1);
+      feedControl1.addFeed("http://drupal.org/node/1068848/release/feed", "Latest Release");
+      feedControl1.draw(document.getElementById("release-feed"));
     }
 
     google.setOnLoadCallback(OnLoad);
@@ -190,7 +192,8 @@
 	  	  </div>
 	  </div>
 	  <div class="row">
-	  	<div id="feed"></div>
+	  	<div id="blog-feed"></div>
+	  	<div id="release-feed"></div>
 	  </div>
   </section>
 
