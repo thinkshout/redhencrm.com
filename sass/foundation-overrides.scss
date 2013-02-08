@@ -15,7 +15,7 @@ $tan: #c5c3b2;
 
 /* Typography */
 body {
-  font-family: 'Droid Serif', serif;
+  font-family: 'Open Sans', sans-serif;
   color: #222;
 }
 
@@ -40,6 +40,11 @@ h3 {
 
 h4 {
   color: $yellow;
+}
+
+input[type="submit"],
+a.button {
+   font-family: 'Droid Serif', serif;
 }
 
 /* Header */
@@ -89,6 +94,7 @@ section {
 
 #intro {
   background: #c5c3b2;
+  margin-top: 5em;
 }
 
 #logo {
@@ -161,7 +167,7 @@ header {
   }
 
   .nav-bar > li > a:first-child {
-    padding: 0 8px;
+    padding: 0 13px;
   }
 
   .nav-bar > li > a {
@@ -186,7 +192,7 @@ header {
   h2 {  
     span {
       color: $darkred;
-      font-size: 1.5em;
+      font-size: 1.2em;
       background: $tan;
       position: relative;
       padding: 0 0.5em;
@@ -239,6 +245,10 @@ header {
   img {
     border: 5px solid #e0e0e0;
   }
+
+  h3 {
+    font-family: 'Droid Serif', serif;
+  }
 }
 
 #developers {
@@ -248,7 +258,7 @@ header {
   h2 {  
     span {
       color: $darkred;
-      font-size: 1.5em;
+      font-size: 1.2em;
       background: $tan;
       position: relative;
       padding: 0 0.5em;
@@ -270,6 +280,12 @@ header {
     top: 1em;
     width: 100%;
     z-index: 1;
+  }
+
+  h3 {
+    color: $darkred;
+    font-size: 2.5em;
+    font-family: 'Droid Serif', serif;
   }
 
   h4 {
@@ -295,7 +311,7 @@ header {
   h2 {  
     span {
       color: $darkred;
-      font-size: 1.5em;
+      font-size: 1.2em;
       background: #dfeff9;
       position: relative;
       padding: 0 0.5em;
@@ -319,6 +335,10 @@ header {
     z-index: 1;
   }
 
+  h3 {
+    font-family: 'Droid Serif', serif;
+  }
+
   h4 {
     color: #333;
   }
@@ -336,7 +356,7 @@ header {
   h2 {  
     span {
       color: $darkred;
-      font-size: 1.5em;
+      font-size: 1.2em;
       background: $tan;
       position: relative;
       padding: 0 0.5em;
@@ -367,6 +387,46 @@ header {
 
 #about {
   text-align: center;
+
+  #feed {
+    font-family: "Open Sans", sans-serif;
+
+    .gfc-title {
+      color: $darkred;
+      font-size: 2.5em;
+      margin: 2em 0;
+    }
+
+    .gf-result {
+      background: #FFF;
+      padding: 2em;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px; /* future proofing */
+      -khtml-border-radius: 10px; /* for old Konqueror browsers */
+      width: 30em;
+      margin: 2em auto;
+
+      .gf-title {
+        font-family: 'Droid Serif', serif;
+        font-size: 1.5em;
+        height: auto;
+        overflow: visible;
+        margin-bottom: 0.75em;
+      }
+
+      .gf-author {
+        padding: 0.75em;
+        clear: both;
+        margin: 1em 0;
+      }
+
+      .gf-snippet {
+        line-height: 1.3em;
+        margin: 1em 0;
+      }
+    }
+  }
 }
 
 #mask {
@@ -403,6 +463,10 @@ header {
 @media all and (min-width: 480px) {
   
   #devs {margin-right: 3em; }
+
+  .nav-bar {
+    float: right;
+  }
   
 }
 
