@@ -27,7 +27,8 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-	color: $lightred;
+	color: $darkred;
+  font-size: 6em;
 }
 
 h2 {
@@ -445,7 +446,7 @@ header {
   position: absolute; 
   top: 0; 
   left: 0; 
-  z-index: 2; 
+  z-index: 1; 
   margin: 0 auto; 
   text-align: center;
 }
@@ -455,6 +456,16 @@ header {
   position: relative;
   top: 0;
   margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    padding-top: 1em;
+    font-family: 'Droid Serif', serif; 
+    color: $darkred;
+    -webkit-text-fill-color: $darkred; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $yellow;
+  }
 
   .slider-nav span { @include opacity(0); @include single-transition(opacity, 400ms); }
   &:hover .slider-nav span { @include opacity(1); }
@@ -462,6 +473,11 @@ header {
 
 
 /* MEDIA QUERIES */
+
+@media only screen and (max-width: 400px) {
+  .orbit-wrapper h1 { font-size:90%;}
+}
+
 
 @media all and (min-width: 480px) {
 
@@ -480,4 +496,14 @@ header {
   }
   
 }
+
+@media only screen and (min-width: 1000px) {
+  .orbit-wrapper {
+    h1 {
+      font-size: 6em;
+    }
+  }
+
+}
+
 

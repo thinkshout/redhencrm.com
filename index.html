@@ -8,9 +8,12 @@
 	<meta charset="utf-8" />
 
 	<!-- Set the viewport width to device width for mobile -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>RedHen CRM</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 	<!-- Typography -->
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
@@ -50,7 +53,7 @@
   <header>
   	<div class="row">
   			<div class="five columns" style="text-align:center;">
-  				<a href="#intro"><img src="images/redhencrm-logo.png" alt="RedHen CRM"></a>
+  				<a href="#features"><img src="images/redhencrm-logo.png" alt="RedHen CRM"></a>
   			</div>
     		<div class="seven columns">
   				<ul id="nav" class="nav-bar" data-magellan-expedition>
@@ -69,11 +72,26 @@
 		  <!-- First Band (Slider) -->
   		  <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->  
   		  <div id="featured">
-  		    <div><img src="images/slides/open-source.png" /></div>
-  		    <div><img src="images/slides/engagement.png" /></div>
-  		    <div><img src="images/slides/enterprise-integrations.png" /></div>
-  		    <div><img src="images/slides/association-management.png" /></div>
-  		    <div><img src="images/slides/fundraising.png" /></div>
+  		    <div>    
+  		    	<h1>Open Source</h1>
+    				<p>RedHen is free, web-based software for tracking your organization’s relationships.</p>
+    			</div>
+    			<div>    
+  		    	<h1>Engagement</h1>
+    				<p>Score and analyze interactions to learn more about your visitors.</p>
+    			</div>
+    			<div>    
+  		    	<h1>Enterprise Integrations</h1>
+    				<p>Simplify integration between Drupal and your enterprise CRM solution.</p>
+    			</div>
+    			<div>    
+  		    	<h1>Association Management Software</h1>
+    				<p>Utilize robust membership and access control features for your constituents.</p>
+    			</div>
+    			<div>    
+  		    	<h1>Fundraising</h1>
+    				<p>Drive successful online campaigns to improve your ability to raise money online.</p>
+    			</div>
   		  </div>
   	</div>
 	  <div class="row">
@@ -228,7 +246,7 @@
       $('#featured').orbit({
          animation: 'vertical-slide',       // fade, horizontal-slide, vertical-slide, horizontal-push
          animationSpeed: 800,                // how fast animtions are
-         timer: true,                        // true or false to have the timer
+         timer: false,                        // true or false to have the timer
          resetTimerOnClick: false,           // true resets the timer instead of pausing slideshow progress
          advanceSpeed: 4000,                 // if timer is enabled, time between transitions
          pauseOnHover: false,                // if you hover pauses the slider
@@ -238,11 +256,11 @@
          captions: false,                     // do you want captions?
          captionAnimation: 'none',           // fade, slideOpen, none
          captionAnimationSpeed: 800,         // if so how quickly should they animate in
-         bullets: true,                     // true or false to activate the bullet navigation
+         bullets: false,                     // true or false to activate the bullet navigation
          bulletThumbs: false,                // thumbnails for the bullets
          bulletThumbLocation: '',            // location from this file where thumbs will be
          afterSlideChange: function(){},     // empty function
-         fluid: true                         // or set a aspect ratio for content slides (ex: '4x3')
+         fluid: '16x6'                        // or set a aspect ratio for content slides (ex: '4x3')
        });
 
 	   $('#nav').magellan();
