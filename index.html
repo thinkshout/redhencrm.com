@@ -32,7 +32,7 @@
     function OnLoad() {
       // Grab the blog feed.
       var feedControl = new google.feeds.FeedControl();
-      feedControl.setNumEntries(3);
+      feedControl.setNumEntries(5);
       feedControl.addFeed("http://thinkshout.com/taxonomy/term/46/feed", "From the Blog");
       feedControl.draw(document.getElementById("blog-feed"));
 
