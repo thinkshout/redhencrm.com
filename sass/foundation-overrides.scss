@@ -17,6 +17,7 @@ $tan: #c5c3b2;
 body {
   font-family: 'Open Sans', sans-serif;
   color: #222;
+  background: $tan;
 }
 
 
@@ -40,6 +41,7 @@ h3 {
 
 h4 {
   color: $yellow;
+  line-height: 1.4em;
 }
 
 input[type="submit"],
@@ -94,7 +96,8 @@ section {
 
 #intro {
   background: #c5c3b2;
-  margin-top: 5em;
+  margin-top: 18em;
+  height: 10em;
 }
 
 #logo {
@@ -187,7 +190,7 @@ header {
 
 #features {
   background: $tan;
-  padding: 10em 0;
+  padding: 13em 0;
   
   h2 {  
     span {
@@ -253,7 +256,7 @@ header {
 
 #developers {
   background: $tan;
-  padding: 10em 0;
+  padding: 13em 0;
   
   h2 {  
     span {
@@ -306,7 +309,7 @@ header {
 #case-studies,
 #about {
   background: #dfeff9;
-  padding: 10em 0;
+  padding: 13em 0;
   
   h2 {  
     span {
@@ -351,7 +354,7 @@ header {
 
 #testimonials {
   background: $tan;
-  padding: 10em 0;
+  padding: 13em 0;
   
   h2 {  
     span {
@@ -390,6 +393,7 @@ header {
 
   #feed {
     font-family: "Open Sans", sans-serif;
+    margin-top: 3em;
 
     .gfc-title {
       color: $darkred;
@@ -461,6 +465,12 @@ header {
 /* MEDIA QUERIES */
 
 @media all and (min-width: 480px) {
+
+  section { min-height: auto; }
+
+  #intro {
+    margin-top: 12em;
+  }
   
   #devs {margin-right: 3em; }
 
