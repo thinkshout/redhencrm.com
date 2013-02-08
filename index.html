@@ -26,20 +26,21 @@
     /*
     *  How to use the Feed Control to grab, parse and display feeds.
     */
-    
+
     google.load("feeds", "1");
-    
+
     function OnLoad() {
       // Create a feed control
       var feedControl = new google.feeds.FeedControl();
-    
+
       // Add two feeds.
       feedControl.addFeed("http://thinkshout.com/taxonomy/term/46/feed", "From the Blog");
+      feedControl.addFeed("http://drupal.org/node/1068848/release/feed", "Recent Releases");
 
       // Draw it.
       feedControl.draw(document.getElementById("feed"));
     }
-    
+
     google.setOnLoadCallback(OnLoad);
     </script>
 
@@ -57,7 +58,7 @@
   					<li data-magellan-arrival='features'><a href="#features">Features</a></li>
    					<li data-magellan-arrival='case-studies'><a href="#case-studies">Case Studies</a></li>
    					<li data-magellan-arrival='community'><a href="#developers">Community</a></li>
-   					<li data-magellan-arrival='about'><a href="#about">About</a></li>			
+   					<li data-magellan-arrival='about'><a href="#about">About</a></li>
    				</ul>
    			</div>
    	</div>
