@@ -65,10 +65,8 @@ section {
   h2 {
     text-align: center;
     span {
-      color: #0692cb;
       font-size: 1.5em;
       font-weight: 200;
-      background: #e0e0e0;
       position: relative;
       padding: 0 0.5em;
       z-index: 2;
@@ -95,11 +93,6 @@ section {
 
 }
 
-#intro {
-  background: #c5c3b2;
-  margin-top: 18em;
-  height: 10em;
-}
 
 #logo {
   position: fixed;
@@ -162,7 +155,7 @@ header {
   }
 
   .nav-bar > li.active:hover {
-    background: #efefef;
+    background: #2ba6cb;
     cursor: default;
   }
 
@@ -187,39 +180,31 @@ header {
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
+
+  #featured {
+    overflow: visible;
+  }
 }
+
+#intro {
+  background: $tan url('../images/barnyard.png') center bottom no-repeat;
+  position: relative;
+}
+
 
 #features {
   background: $tan;
-  padding: 0em 0;
-  margin-top: 14em;
+  padding: 13em 0;
   
   h2 { 
-    padding: 2em 0 0;
     span {
       color: $darkred;
-      font-size: 1.2em;
       background: $tan;
-      position: relative;
-      padding: 0 0.5em;
-      z-index: 2;
-      display: inline-block;
-      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
     }
   }
 
   h2:before {
     border: 1px solid $darkred;
-    border-width: 1px 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 0;
-    margin-top: -2px;
-    position: relative;
-    top: 1em;
-    width: 100%;
-    z-index: 1;
   }
 
   .feature {
@@ -261,28 +246,12 @@ header {
   h2 {  
     span {
       color: $darkred;
-      font-size: 1.2em;
       background: $tan;
-      position: relative;
-      padding: 0 0.5em;
-      z-index: 2;
-      display: inline-block;
-      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
     }
   }
 
   h2:before {
     border: 1px solid $darkred;
-    border-width: 1px 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 0;
-    margin-top: -2px;
-    position: relative;
-    top: 1em;
-    width: 100%;
-    z-index: 1;
   }
 
   h3 {
@@ -314,28 +283,12 @@ header {
   h2 {  
     span {
       color: $darkred;
-      font-size: 1.2em;
       background: #dfeff9;
-      position: relative;
-      padding: 0 0.5em;
-      z-index: 2;
-      display: inline-block;
-      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
     }
   }
 
   h2:before {
     border: 1px solid $darkred;
-    border-width: 1px 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 0;
-    margin-top: -2px;
-    position: relative;
-    top: 1em;
-    width: 100%;
-    z-index: 1;
   }
 
   h3 {
@@ -359,28 +312,12 @@ header {
   h2 {  
     span {
       color: $darkred;
-      font-size: 1.2em;
       background: $tan;
-      position: relative;
-      padding: 0 0.5em;
-      z-index: 2;
-      display: inline-block;
-      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
     }
   }
 
   h2:before {
     border: 1px solid $darkred;
-    border-width: 1px 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 0;
-    margin-top: -2px;
-    position: relative;
-    top: 1em;
-    width: 100%;
-    z-index: 1;
   }
 
   h4 {
@@ -391,7 +328,7 @@ header {
 #about {
   text-align: center;
 
-  #feed {
+  #blog-feed, #release-feed {
     font-family: "Open Sans", sans-serif;
     margin-top: 3em;
 
@@ -457,52 +394,61 @@ header {
   top: 0;
   margin: 0 auto;
   text-align: center;
+  overflow: visible;
 
   h1 {
-    padding-top: 1em;
+    padding-top: 0;
     font-family: 'Droid Serif', serif; 
     color: $darkred;
-    -webkit-text-fill-color: $darkred; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: $yellow;
+  }
+
+  p {
+    font-size: 2em;
   }
 
   .slider-nav span { @include opacity(0); @include single-transition(opacity, 400ms); }
   &:hover .slider-nav span { @include opacity(1); }
 }
 
+#code { margin: 1.4em 0 0; }
+
 
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 400px) {
-  .orbit-wrapper h1 { font-size:90%;}
+  #slides { margin: 13em auto; padding: 0 1em;}
+  .orbit-wrapper {
+    h1 {
+      font-size: 3em;
+      -webkit-text-fill-color: none; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: none;
+      -webkit-text-stroke-color: none;
+    }
+  }
 }
 
 
 @media all and (min-width: 480px) {
 
-  #features {
-    margin-top: 12em;
-
-    h2 {
-      padding-top: 8em;
-    }
-  }
-  
   #devs {margin-right: 3em; }
 
   .nav-bar {
     float: right;
   }
+
+  .orbit-wrapper {
+    h1 {
+      font-size: 6em;
+      padding: 2em 0 0;
+      -webkit-text-fill-color: $darkred; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $lightred;
+    }
+  }
   
 }
 
 @media only screen and (min-width: 1000px) {
-  .orbit-wrapper {
-    h1 {
-      font-size: 6em;
-    }
-  }
 
 }
 

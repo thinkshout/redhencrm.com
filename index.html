@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
-	<meta charset="utf-8" />
+    <meta charset="utf-8"/>
 
-	<!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<title>RedHen CRM</title>
+    <title>RedHen CRM</title>
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Typography -->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
 
-	<!-- Typography -->
-	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
+    <!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/app.css">
-	<link rel="stylesheet" href="stylesheets/foundation-overrides.css">
+    <!-- Included CSS Files -->
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <link rel="stylesheet" href="stylesheets/foundation-overrides.css">
 
-	<script src="javascripts/foundation/modernizr.foundation.js"></script>
+    <script src="javascripts/foundation/modernizr.foundation.js"></script>
 
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-	<script type="text/javascript">
-    /*
-    *  How to use the Feed Control to grab, parse and display feeds.
-    */
-    
-    google.load("feeds", "1");
-    
-    function OnLoad() {
-      // Create a feed control
-      var feedControl = new google.feeds.FeedControl();
-    
-      // Add two feeds.
-      feedControl.addFeed("http://thinkshout.com/taxonomy/term/46/feed", "From the Blog");
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        /*
+         *  How to use the Feed Control to grab, parse and display feeds.
+         */
 
-      // Draw it.
-      feedControl.draw(document.getElementById("feed"));
-    }
-    
-    google.setOnLoadCallback(OnLoad);
+        google.load("feeds", "1");
+
+        function OnLoad() {
+            // Grab the blog feed.
+            var feedControl = new google.feeds.FeedControl();
+            feedControl.setNumEntries(5);
+            feedControl.addFeed("http://thinkshout.com/taxonomy/term/46/feed", "From the Blog");
+            feedControl.draw(document.getElementById("blog-feed"));
+
+            // Releases feed. Note we only want one item.
+            var feedControl1 = new google.feeds.FeedControl();
+            feedControl1.setNumEntries(1);
+            feedControl1.addFeed("http://drupal.org/node/1068848/release/feed", "Latest Release");
+            feedControl1.draw(document.getElementById("release-feed"));
+        }
+
+        google.setOnLoadCallback(OnLoad);
     </script>
 
 </head>
@@ -52,22 +57,25 @@
 	<!---->
   <header>
   	<div class="row">
-  			<div class="five columns" style="text-align:center;">
-  				<a href="#features"><img src="images/redhencrm-logo.png" alt="RedHen CRM"></a>
+  			<div class="three mobile-four columns" style="text-align:center;">
+  				<a href="#intro"><img src="images/redhencrm-logo.png" alt="RedHen CRM"></a>
   			</div>
-    		<div class="seven columns">
+    		<div class="seven mobile-four columns">
   				<ul id="nav" class="nav-bar" data-magellan-expedition>
+  					<li data-magellan-arrival='home'><a href="#intro">Home</a></li>
   					<li data-magellan-arrival='features'><a href="#features">Features</a></li>
    					<li data-magellan-arrival='case-studies'><a href="#case-studies">Case Studies</a></li>
    					<li data-magellan-arrival='community'><a href="#developers">Community</a></li>
-   					<li data-magellan-arrival='about'><a href="#about">About</a></li>			
+   					<li data-magellan-arrival='about'><a href="#about">About</a></li>
    				</ul>
+   			</div>
+   			<div class="two columns hide-for-medium-down">
+   				<a id="code" class="button success medium" href="#release-feed">Get the code</a>
    			</div>
    	</div>
   </header>
 
-  <section id="features" data-magellan-destination='features'>
-		<div id="mask"><img src="images/mask.png"></div>
+  <section id="intro" data-magellan-destination='home'>
 		<div id="slides">
 		  <!-- First Band (Slider) -->
   		  <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->  
@@ -75,6 +83,7 @@
   		    <div>    
   		    	<h1>Open Source</h1>
     				<p>RedHen is free, web-based software for tracking your organization’s relationships.</p>
+    				<a class="button large" href="#release-feed">Get the code</a>
     			</div>
     			<div>    
   		    	<h1>Engagement</h1>
@@ -85,7 +94,7 @@
     				<p>Simplify integration between Drupal and your enterprise CRM solution.</p>
     			</div>
     			<div>    
-  		    	<h1>Association Management Software</h1>
+  		    	<h1>Association Management</h1>
     				<p>Utilize robust membership and access control features for your constituents.</p>
     			</div>
     			<div>    
@@ -94,6 +103,9 @@
     			</div>
   		  </div>
   	</div>
+  </section>
+
+  <section id="features" data-magellan-destination='features'>
 	  <div class="row">
 	  	<div class="twelve columns">
 	  	  <div class="eight columns centered">
@@ -127,7 +139,7 @@
 	</section>
 	<!-- End Main -->
 	
-<section id="case-studies" data-magellan-destination='case-studies'>
+	<section id="case-studies" data-magellan-destination='case-studies'>
 	  <div class="row">
 	  	<div class="eight mobile-four columns centered">
 	  	  <h2><span>Case Studies</span></h2>
@@ -192,8 +204,6 @@
 	  </div>
   </section>
 
-  
-
   <section id="about" data-magellan-destination='about'>
 	  <div class="row">
 	  	<div class="eight mobile-four columns centered">
@@ -206,9 +216,10 @@
 	  	    <a class="large button" href="http://thinkshout.com/blog/category/redhen" alt="Learn more about RedHen">Learn more about RedHen</a>
 	  	  </div>
 	  </div>
-	  <div class="row">
-	  	<div id="feed"></div>
-	  </div>
+    <div class="row">
+        <div id="blog-feed"></div>
+        <div id="release-feed"></div>
+    </div>
   </section>
 
 	<!-- Included JS Files (Uncompressed) -->
@@ -244,27 +255,28 @@
   <script type="text/javascript">
     $(window).load(function() {
       $('#featured').orbit({
-         animation: 'vertical-slide',       // fade, horizontal-slide, vertical-slide, horizontal-push
-         animationSpeed: 800,                // how fast animtions are
-         timer: false,                        // true or false to have the timer
-         resetTimerOnClick: false,           // true resets the timer instead of pausing slideshow progress
-         advanceSpeed: 4000,                 // if timer is enabled, time between transitions
-         pauseOnHover: false,                // if you hover pauses the slider
-         startClockOnMouseOut: false,        // if clock should start on MouseOut
-         startClockOnMouseOutAfter: 1000,    // how long after MouseOut should the timer start again
-         directionalNav: true,               // manual advancing directional navs
-         captions: false,                     // do you want captions?
-         captionAnimation: 'none',           // fade, slideOpen, none
-         captionAnimationSpeed: 800,         // if so how quickly should they animate in
-         bullets: false,                     // true or false to activate the bullet navigation
-         bulletThumbs: false,                // thumbnails for the bullets
-         bulletThumbLocation: '',            // location from this file where thumbs will be
-         afterSlideChange: function(){},     // empty function
-         fluid: '16x6'                        // or set a aspect ratio for content slides (ex: '4x3')
-       });
+        animation:'vertical-slide', // fade, horizontal-slide, vertical-slide, horizontal-push
+        animationSpeed:800, // how fast animtions are
+        timer:true, // true or false to have the timer
+        resetTimerOnClick:false, // true resets the timer instead of pausing slideshow progress
+        advanceSpeed:4000, // if timer is enabled, time between transitions
+        pauseOnHover:false, // if you hover pauses the slider
+        startClockOnMouseOut:false, // if clock should start on MouseOut
+        startClockOnMouseOutAfter:1000, // how long after MouseOut should the timer start again
+        directionalNav:false, // manual advancing directional navs
+        captions:false, // do you want captions?
+        captionAnimation:'none', // fade, slideOpen, none
+        captionAnimationSpeed:800, // if so how quickly should they animate in
+        bullets:false, // true or false to activate the bullet navigation
+        bulletThumbs:false, // thumbnails for the bullets
+        bulletThumbLocation:'', // location from this file where thumbs will be
+        afterSlideChange:function () {},
+        fluid: '16x6'                        // or set a aspect ratio for content slides (ex: '4x3')
+      });
 
 	   $('#nav').magellan();
-    });
-  </script>
+	  
+	  });
+	</script>
 </body>
 </html>
