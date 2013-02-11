@@ -6036,7 +6036,7 @@ header {
   background: #FFF;
 }
 /* line 111, ../sass/foundation-overrides.scss */
-header .nav-bar {
+header #nav {
   height: 40px;
   background: #FFF;
   margin-left: 0;
@@ -6045,7 +6045,7 @@ header .nav-bar {
   float: right;
 }
 /* line 120, ../sass/foundation-overrides.scss */
-header .nav-bar > li {
+header #nav > li {
   float: left;
   display: block;
   position: relative;
@@ -6059,47 +6059,47 @@ header .nav-bar > li {
   box-shadow: none;
 }
 /* line 134, ../sass/foundation-overrides.scss */
-header .nav-bar > li:first-child {
+header #nav > li:first-child {
   -webkit-box-shadow: 0 0 0;
   -moz-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
 }
 /* line 140, ../sass/foundation-overrides.scss */
-header .nav-bar > li:last-child {
+header #nav > li:last-child {
   border-right: 0;
   -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
   -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
   box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
 }
 /* line 147, ../sass/foundation-overrides.scss */
-header .nav-bar > li.active {
+header #nav > li.active {
   background: #2ba6cb;
   border-color: #2284a1;
 }
 /* line 152, ../sass/foundation-overrides.scss */
-header .nav-bar > li.active > a {
+header #nav > li.active > a {
   color: white;
   cursor: default;
 }
 /* line 157, ../sass/foundation-overrides.scss */
-header .nav-bar > li.active:hover {
+header #nav > li.active:hover {
   background: #2ba6cb;
   cursor: default;
 }
 /* line 162, ../sass/foundation-overrides.scss */
-header .nav-bar > li:hover {
+header #nav > li:hover {
   background: #e0e0e0;
 }
 /* line 166, ../sass/foundation-overrides.scss */
-header .nav-bar > li > a:first-child {
+header #nav > li > a:first-child {
   padding: 0 13px;
 }
 /* line 170, ../sass/foundation-overrides.scss */
-header .nav-bar > li > a {
+header #nav > li > a {
   color: #8c0000;
 }
 /* line 174, ../sass/foundation-overrides.scss */
-header .nav-bar > li ul {
+header #nav > li ul {
   margin-bottom: 0;
 }
 
@@ -6276,10 +6276,9 @@ header .nav-bar > li ul {
   /* future proofing */
   -khtml-border-radius: 10px;
   /* for old Konqueror browsers */
-  width: 30em;
   margin: 2em auto;
 }
-/* line 351, ../sass/foundation-overrides.scss */
+/* line 350, ../sass/foundation-overrides.scss */
 #about #blog-feed .gf-result .gf-title, #about #release-feed .gf-result .gf-title {
   font-family: "Droid Serif", serif;
   font-size: 1.5em;
@@ -6287,19 +6286,19 @@ header .nav-bar > li ul {
   overflow: visible;
   margin-bottom: 0.75em;
 }
-/* line 359, ../sass/foundation-overrides.scss */
+/* line 358, ../sass/foundation-overrides.scss */
 #about #blog-feed .gf-result .gf-author, #about #release-feed .gf-result .gf-author {
   padding: 0.75em;
   clear: both;
   margin: 1em 0;
 }
-/* line 365, ../sass/foundation-overrides.scss */
+/* line 364, ../sass/foundation-overrides.scss */
 #about #blog-feed .gf-result .gf-snippet, #about #release-feed .gf-result .gf-snippet {
   line-height: 1.3em;
   margin: 1em 0;
 }
 
-/* line 373, ../sass/foundation-overrides.scss */
+/* line 372, ../sass/foundation-overrides.scss */
 #mask {
   /* Set rules to fill background  
   min-height: 100%; 
@@ -6316,7 +6315,7 @@ header .nav-bar > li ul {
   text-align: center;
 }
 
-/* line 391, ../sass/foundation-overrides.scss */
+/* line 390, ../sass/foundation-overrides.scss */
 .orbit-wrapper {
   z-index: 1;
   position: relative;
@@ -6325,17 +6324,17 @@ header .nav-bar > li ul {
   text-align: center;
   overflow: visible;
 }
-/* line 399, ../sass/foundation-overrides.scss */
+/* line 398, ../sass/foundation-overrides.scss */
 .orbit-wrapper h1 {
   padding-top: 0;
   font-family: "Droid Serif", serif;
   color: #8c0000;
 }
-/* line 405, ../sass/foundation-overrides.scss */
+/* line 404, ../sass/foundation-overrides.scss */
 .orbit-wrapper p {
   font-size: 2em;
 }
-/* line 409, ../sass/foundation-overrides.scss */
+/* line 408, ../sass/foundation-overrides.scss */
 .orbit-wrapper .slider-nav span {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -6344,52 +6343,123 @@ header .nav-bar > li ul {
   -o-transition: opacity 400ms;
   transition: opacity 400ms;
 }
-/* line 410, ../sass/foundation-overrides.scss */
+/* line 409, ../sass/foundation-overrides.scss */
 .orbit-wrapper:hover .slider-nav span {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 413, ../sass/foundation-overrides.scss */
+/* line 412, ../sass/foundation-overrides.scss */
 #code {
   margin: 1.4em 0 0;
 }
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 400px) {
-  /* line 419, ../sass/foundation-overrides.scss */
+  /* line 418, ../sass/foundation-overrides.scss */
   #slides {
     margin: 13em auto;
     padding: 0 1em;
   }
 
-  /* line 421, ../sass/foundation-overrides.scss */
+  /* line 420, ../sass/foundation-overrides.scss */
   .orbit-wrapper h1 {
     font-size: 3em;
-    -webkit-text-fill-color: none;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: none;
-    -webkit-text-stroke-color: none;
+  }
+
+  /* line 425, ../sass/foundation-overrides.scss */
+  #nav {
+    height: 40px;
+    background: #FFF;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0;
+    float: right;
+  }
+
+  /* line 434, ../sass/foundation-overrides.scss */
+  #nav > li {
+    float: none;
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-right: none;
+    line-height: 38px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 449, ../sass/foundation-overrides.scss */
+  #nav > li:first-child {
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+  }
+
+  /* line 455, ../sass/foundation-overrides.scss */
+  #nav > li:last-child {
+    border-right: 0;
+    -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 462, ../sass/foundation-overrides.scss */
+  #nav > li.active {
+    background: #2ba6cb;
+    border-color: #2284a1;
+  }
+
+  /* line 467, ../sass/foundation-overrides.scss */
+  #nav > li.active > a {
+    color: white;
+    cursor: default;
+  }
+
+  /* line 472, ../sass/foundation-overrides.scss */
+  #nav > li.active:hover {
+    background: #2ba6cb;
+    cursor: default;
+  }
+
+  /* line 477, ../sass/foundation-overrides.scss */
+  #nav > li:hover {
+    background: #e0e0e0;
+  }
+
+  /* line 481, ../sass/foundation-overrides.scss */
+  #nav > li > a:first-child {
+    padding: 0 13px;
+  }
+
+  /* line 485, ../sass/foundation-overrides.scss */
+  #nav > li > a {
+    color: #8c0000;
+  }
+
+  /* line 489, ../sass/foundation-overrides.scss */
+  #nav > li ul {
+    margin-bottom: 0;
   }
 }
 @media all and (min-width: 480px) {
-  /* line 433, ../sass/foundation-overrides.scss */
+  /* line 497, ../sass/foundation-overrides.scss */
   #devs {
     margin-right: 3em;
   }
 
-  /* line 435, ../sass/foundation-overrides.scss */
+  /* line 499, ../sass/foundation-overrides.scss */
   .nav-bar {
     float: right;
   }
 
-  /* line 440, ../sass/foundation-overrides.scss */
+  /* line 504, ../sass/foundation-overrides.scss */
   .orbit-wrapper h1 {
     font-size: 6em;
     padding: 2em 0 0;
-    -webkit-text-fill-color: #8c0000;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #c30000;
   }
 }

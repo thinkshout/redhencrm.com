@@ -108,7 +108,7 @@ header {
   z-index: 5;
   background: #FFF;
 
-  .nav-bar {
+  #nav {
     height: 40px;
     background: #FFF;
     margin-left: 0;
@@ -117,7 +117,7 @@ header {
     float: right;
   }
 
-  .nav-bar > li {
+  #nav > li {
     float: left;
     display: block;
     position: relative;
@@ -131,47 +131,47 @@ header {
     box-shadow: none;
   }
 
-  .nav-bar > li:first-child {
+  #nav > li:first-child {
     -webkit-box-shadow: 0 0 0;
     -moz-box-shadow: 0 0 0;
     box-shadow: 0 0 0;
   }
 
-  .nav-bar > li:last-child {
+  #nav > li:last-child {
     border-right: 0;
     -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
     -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
     box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
   }
 
-  .nav-bar > li.active {
+  #nav > li.active {
     background: #2ba6cb;
     border-color: #2284a1;
   }
 
-  .nav-bar > li.active > a {
+  #nav > li.active > a {
     color: white;
     cursor: default;
   }
 
-  .nav-bar > li.active:hover {
+  #nav > li.active:hover {
     background: #2ba6cb;
     cursor: default;
   }
 
-  .nav-bar > li:hover {
+  #nav > li:hover {
     background: #e0e0e0;
   }
 
-  .nav-bar > li > a:first-child {
+  #nav > li > a:first-child {
     padding: 0 13px;
   }
 
-  .nav-bar > li > a {
+  #nav > li > a {
     color: $darkred;
   }
 
-  .nav-bar > li ul {
+  #nav > li ul {
     margin-bottom: 0;
   }
 }
@@ -345,7 +345,6 @@ header {
       -webkit-border-radius: 10px;
       border-radius: 10px; /* future proofing */
       -khtml-border-radius: 10px; /* for old Konqueror browsers */
-      width: 30em;
       margin: 2em auto;
 
       .gf-title {
@@ -420,10 +419,75 @@ header {
   .orbit-wrapper {
     h1 {
       font-size: 3em;
-      -webkit-text-fill-color: none; /* Will override color (regardless of order) */
-      -webkit-text-stroke-width: none;
-      -webkit-text-stroke-color: none;
     }
+  }
+
+  #nav {
+    height: 40px;
+    background: #FFF;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0;
+    float: right;
+  }
+  
+  #nav > li {
+    float: none;
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-right: none;
+    line-height: 38px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  #nav > li:first-child {
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+  }
+  
+  #nav > li:last-child {
+    border-right: 0;
+    -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
+  }
+  
+  #nav > li.active {
+    background: #2ba6cb;
+    border-color: #2284a1;
+  }
+  
+  #nav > li.active > a {
+    color: white;
+    cursor: default;
+  }
+  
+  #nav > li.active:hover {
+    background: #2ba6cb;
+    cursor: default;
+  }
+  
+  #nav > li:hover {
+    background: #e0e0e0;
+  }
+  
+  #nav > li > a:first-child {
+    padding: 0 13px;
+  }
+  
+  #nav > li > a {
+    color: $darkred;
+  }
+  
+  #nav > li ul {
+    margin-bottom: 0;
   }
 }
 
@@ -440,9 +504,6 @@ header {
     h1 {
       font-size: 6em;
       padding: 2em 0 0;
-      -webkit-text-fill-color: $darkred; /* Will override color (regardless of order) */
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: $lightred;
     }
   }
   

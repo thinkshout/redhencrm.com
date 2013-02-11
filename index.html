@@ -56,22 +56,40 @@
 	<!---->
   <header>
   	<div class="row">
-  			<div class="three mobile-four columns" style="text-align:center;">
-  				<a href="#intro"><img src="images/redhencrm-logo.png" alt="RedHen CRM"></a>
-  			</div>
-    		<div class="seven mobile-four columns">
-  				<ul id="nav" class="nav-bar" data-magellan-expedition>
-  					<li data-magellan-arrival='home'><a href="#intro">Home</a></li>
-  					<li data-magellan-arrival='features'><a href="#features">Features</a></li>
-   					<li data-magellan-arrival='case-studies'><a href="#case-studies">Case Studies</a></li>
-   					<li data-magellan-arrival='community'><a href="#developers">Community</a></li>
-   					<li data-magellan-arrival='about'><a href="#about">About</a></li>
-   				</ul>
-   			</div>
-   			<div class="two columns hide-for-medium-down">
-   				<a id="code" class="button success medium" href="#release-feed">Get the code</a>
-   			</div>
-   	</div>
+  		<div class="three mobile-four columns" style="text-align:center;">
+  			<a href="#intro"><img src="images/redhencrm-logo.png" alt="RedHen CRM"></a>
+  		</div>
+  		
+		  <div class="twelve columns">
+		    <nav class="top-bar">
+		      <ul>
+		        <li class="toggle-topbar"><a href="#"></a></li>
+		      </ul>
+		
+		        <!-- Right Nav Section -->
+		        <ul class="right">
+		          <li class="divider show-for-medium-and-up"></li>
+		          <li>
+		            <a href="#intro">Home</a>
+		          </li>
+		          <li >
+		            <a href="#features">Features</a>
+		          </li>
+		          <li>
+		            <a href="#case-studies">Case Studies</a>
+		          </li>
+		          <li>
+		            <a href="#developers">Community</a>
+		          </li>
+		          <li>
+		            <a href="#about">About</a>
+		          </li>
+		          <li>
+		            <a href="#release-feed">Get the Code</a>
+		          </li>
+		        </ul>
+		    </nav>
+		  </div>
   </header>
 
   <section id="intro" data-magellan-destination='home'>
@@ -214,8 +232,10 @@
 	  	  </div>
 	  </div>
     <div class="row">
+    	<div class="twelve mobile-four columns">
         <div id="blog-feed"></div>
         <div id="release-feed"></div>
+      </div>
     </div>
   </section>
 
@@ -271,8 +291,7 @@
         fluid: '16x6'                        // or set a aspect ratio for content slides (ex: '4x3')
       });
 
-	   $('#nav').magellan();
-	  
+	    //$('#nav').magellan();	
 	  });
 	</script>
 </body>
