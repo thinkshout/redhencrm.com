@@ -232,7 +232,7 @@
 	  	  </div>
 	  </div>
     <div class="row">
-    	<div class="twelve mobile-four columns">
+    	<div class="six mobile-four columns centered">
         <div id="blog-feed"></div>
         <div id="release-feed"></div>
       </div>
@@ -292,6 +292,9 @@
       });
 
 	    //$('#nav').magellan();	
+	    $('.top-bar a').bind('click', function() {
+        $('.top-bar').removeClass('expanded');
+      });
 	  });
 	</script>
 </body>
