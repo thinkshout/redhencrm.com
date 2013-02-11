@@ -95,10 +95,7 @@ section {
 
 
 #logo {
-  position: fixed;
-  top: 0;
-  z-index: 6;
-  text-align: center;
+  float: left;
 }
 
 .timer { display: none; }
@@ -373,12 +370,16 @@ header {
 @media only screen and (max-width: 400px) {
   
   #slides { 
-    margin: 10em auto; 
+    margin: 9em auto; 
     padding: 0 1em;
   }
 
   #intro {
     background: url('../images/barnyard.png') center top no-repeat;
+  }
+
+  #logo {
+    float: none;
   }
 
   .orbit-wrapper {
@@ -389,7 +390,7 @@ header {
       font-size: 1.2em;
     }
   }
-  
+
   section {
     h2 { 
       span {
@@ -397,6 +398,10 @@ header {
         line-height: 1.8;
       }
     }
+  }
+
+  #share, #devs {
+    padding: 5em 2em;
   }
 }
 
