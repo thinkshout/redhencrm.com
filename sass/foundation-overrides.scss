@@ -109,73 +109,27 @@ header {
   top: 0px;
   z-index: 5;
   background: #FFF;
+}
 
-  #nav {
-    height: 40px;
-    background: #FFF;
-    margin-left: 0;
-    margin-top: 20px;
-    padding: 0;
-    float: right;
-  }
+.top-bar {
+  height: 80px;
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}
 
-  #nav > li {
-    float: left;
-    display: block;
-    position: relative;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    border-right: none;
-    line-height: 38px;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-  }
+.top-bar ul > li {
+  text-align: center;
+}
 
-  #nav > li:first-child {
-    -webkit-box-shadow: 0 0 0;
-    -moz-box-shadow: 0 0 0;
-    box-shadow: 0 0 0;
-  }
+.top-bar ul > li a:not(.button) { 
+  height: 45px; 
+  line-height: 45px;
+  font-family: 'Droid Serif', serif; 
+  font-size: 1.1em;
+}
 
-  #nav > li:last-child {
-    border-right: 0;
-    -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
-    -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
-    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
-  }
-
-  #nav > li.active {
-    background: #2ba6cb;
-    border-color: #2284a1;
-  }
-
-  #nav > li.active > a {
-    color: white;
-    cursor: default;
-  }
-
-  #nav > li.active:hover {
-    background: #2ba6cb;
-    cursor: default;
-  }
-
-  #nav > li:hover {
-    background: #e0e0e0;
-  }
-
-  #nav > li > a:first-child {
-    padding: 0 13px;
-  }
-
-  #nav > li > a {
-    color: $darkred;
-  }
-
-  #nav > li ul {
-    margin-bottom: 0;
-  }
+.top-bar .right {
+  margin-top: 1em;
 }
 
 #slides {
@@ -421,6 +375,15 @@ header {
   .orbit-wrapper {
     h1 {
       font-size: 3em;
+    }
+  }
+
+  section {
+    h2 { 
+      span {
+        font-size: 1em;
+        line-height: 1.8;
+      }
     }
   }
 }
