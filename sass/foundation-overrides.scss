@@ -371,13 +371,25 @@ header {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 400px) {
-  #slides { margin: 13em auto; padding: 0 1em;}
+  
+  #slides { 
+    margin: 10em auto; 
+    padding: 0 1em;
+  }
+
+  #intro {
+    background: url('../images/barnyard.png') center top no-repeat;
+  }
+
   .orbit-wrapper {
     h1 {
       font-size: 3em;
     }
+    p {
+      font-size: 1.2em;
+    }
   }
-
+  
   section {
     h2 { 
       span {

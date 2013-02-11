@@ -6319,30 +6319,39 @@ header {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 400px) {
-  /* line 374, ../sass/foundation-overrides.scss */
+  /* line 375, ../sass/foundation-overrides.scss */
   #slides {
-    margin: 13em auto;
+    margin: 10em auto;
     padding: 0 1em;
   }
 
-  /* line 376, ../sass/foundation-overrides.scss */
+  /* line 380, ../sass/foundation-overrides.scss */
+  #intro {
+    background: url("../images/barnyard.png") center top no-repeat;
+  }
+
+  /* line 385, ../sass/foundation-overrides.scss */
   .orbit-wrapper h1 {
     font-size: 3em;
   }
+  /* line 388, ../sass/foundation-overrides.scss */
+  .orbit-wrapper p {
+    font-size: 1.2em;
+  }
 
-  /* line 383, ../sass/foundation-overrides.scss */
+  /* line 395, ../sass/foundation-overrides.scss */
   section h2 span {
     font-size: 1em;
     line-height: 1.8;
   }
 }
 @media all and (min-width: 480px) {
-  /* line 394, ../sass/foundation-overrides.scss */
+  /* line 406, ../sass/foundation-overrides.scss */
   #devs {
     margin-right: 3em;
   }
 
-  /* line 397, ../sass/foundation-overrides.scss */
+  /* line 409, ../sass/foundation-overrides.scss */
   .orbit-wrapper h1 {
     font-size: 6em;
     padding: 2em 0 0;
