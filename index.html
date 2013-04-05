@@ -60,23 +60,23 @@
 		  <a href="#intro" id="logo"><img src="images/redhencrm-logo.png" alt="RedHen CRM"></a>
 		  <li id="toggle"><a href="#"><span class="menu"></span></a></li>
 		  <!-- Right Nav Section -->
-		  <ul class="primary-menu">
-		    <li>
+		  <ul class="primary-menu" data-magellan-expedition>
+		    <li data-magellan-arrival='home'>
 		      <a href="#intro">Home</a>
 		    </li>
-		    <li >
-		      <a href="#features">Features</a>
+		    <li data-magellan-arrival='features'>
+		      <a href="#features" >Features</a>
 		    </li>
-		    <li>
-		      <a href="#case-studies">Case Studies</a>
+		    <li data-magellan-arrival='case-studies'>
+		      <a href="#case-studies" >Case Studies</a>
 		    </li>
-		    <li>
-		      <a href="#developers">Community</a>
+		    <li data-magellan-arrival='community'>
+		      <a href="#developers" >Community</a>
 		    </li>
-		    <li>
+		    <li data-magellan-arrival='blog'>
 		      <a href="#about">Blog</a>
 		    </li>
-		    <li>
+		    <li data-magellan-arrival='code'>
 		      <a href="#code">Get the Code</a>
 		    </li>
 		  </ul>
@@ -120,22 +120,22 @@
 	  	  	<h2><span>Features</span></h2>
 	  
 	  	  	<div class="row">
-	  	  		<div class="five mobile-four columns feature panel">
-	  	  		  <span class="address-book feature-icon"></span>
+	  	  		<div class="five mobile-four columns feature">
+	  	  		  <div class="feature-icon"><span class="address-book"></span></div>
 	  	  		  <h3>Manage your contacts effortlessly</h3>
 	  	  		</div>
-	  	  		<div class="five mobile-four push-one columns feature panel">
-	  	  		  <span class="cloud-upload feature-icon"></span>
+	  	  		<div class="five mobile-four push-one columns feature">
+	  	  		  <div class="feature-icon"><span class="cloud-upload"></span></div>
 	  	  		  <h3>Consolidate your commerce, CRM and CMS tools</h3>
 	  	  		</div>
 	  	  	</div>
 	  	  	<div class="row">
-	  	  		<div class="five mobile-four columns feature panel">
-	  	  		  <span class="bars feature-icon"></span>
+	  	  		<div class="five mobile-four columns feature">
+	  	  		  <div class="feature-icon"><span class="bars"></span></div>
 	  	  		  <h3>Customize for your organization's fundraising goals</h3>
 	  	  		</div>
-	  	  		<div class="five mobile-four push-one columns feature panel">
-	  	  		  <span class="meter feature-icon"></span>
+	  	  		<div class="five mobile-four push-one columns feature">
+	  	  		  <div class="feature-icon"><span class="meter"></span></div>
 	  	  		  <h3>Track engagement with your supporters</h3>
 	  	  		</div>
 	  	  	</div>
@@ -172,13 +172,13 @@
 	  	</div>
 	  </div>
 	  <div class="row">
-	  	<div class="twelve columns">
-	  	  <div class="five columns" id="devs"> 
+	  	<div class="eight columns centered">
+	  	  <div id="devs"> 
 	  	  	<h3>Developers</h3>
 	  	    <h4>RedHen CRM is fully open-sourced with the code living in the RedHen project on Drupal.org.</h4>
-	  	    <a class="large button" href="http://drupal.org/project/redhen" alt="RedHen CRM Drupal Project Page">Get Started Today</a>
+	  	    <a class="medium button" href="http://drupal.org/project/redhen" alt="RedHen CRM Drupal Project Page">Get Started Today</a>
 	  	  </div>
-	  	  <div class="five columns" id="share">
+	  	  <div id="share">
 	  	  	<h3>Stay in touch</h3>
 	  	  	<h4>Get the latest news on releases and updates for RedHen.</h4>
 	  	    <!-- Begin MailChimp Signup Form -->
@@ -200,7 +200,7 @@
 	  	          <div class="response" id="mce-success-response" style="display:none"></div>
 	  	        </div>
 	  	        <div>
-	  	        	<input type="submit" value="Send me updates" name="subscribe" id="mc-embedded-subscribe" class="large button" /	>
+	  	        	<input type="submit" value="Send me updates" name="subscribe" id="mc-embedded-subscribe" class="medium button" /	>
 	  	        </div>
 	  	      </form>
 	  	    </div>
@@ -210,7 +210,7 @@
 	  </div>
   </section>
 
-  <section id="about" data-magellan-destination='about'>
+  <section id="about" data-magellan-destination='blog'>
 	  <div class="row">
 	  	<div class="eight mobile-four columns centered">
 	  	  <h2><span>From The Blog</span></h2>
