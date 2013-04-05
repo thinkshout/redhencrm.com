@@ -18,7 +18,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #222;
   background: url(../images/body.jpg) top center fixed no-repeat;
-  background-size: cover;
 }
 
 
@@ -52,6 +51,12 @@ a.button {
    font-family: 'Droid Serif', serif;
 }
 
+#redhen-id {
+  position: fixed;
+  bottom: 2em;
+  left: 2em;
+}
+
 /* Header */
 
 .tag {
@@ -59,7 +64,8 @@ a.button {
   padding: 1em 0 0;
 }
 
-section {
+section,
+footer {
   position: relative;
   display: block;
   height: 100%;
@@ -310,6 +316,17 @@ header {
   }
 }
 
+#code {
+  .panel {
+    background: #FFF;
+    padding: 2em;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+  }
+}
+
 #about {
   text-align: center;
 }
@@ -463,7 +480,7 @@ header {
   .orbit-wrapper {
     h1 {
       font-size: 5em;
-      padding: 1.5em 0 0;
+      padding: 2.5em 0 0;
     }
   }
   
