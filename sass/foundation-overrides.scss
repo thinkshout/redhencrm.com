@@ -140,14 +140,15 @@ header {
 }
 
 #intro {
-  background: $tan url('../images/barnyard.png') center bottom no-repeat;
+  background: $tan url('../images/barnyard.png') center center no-repeat;
   position: relative;
 }
 
 
 #features {
   background: $tan;
-  padding: 13em 0;
+  padding: 7em 0;
+  position: relative;
   
   h2 { 
     span {
@@ -375,7 +376,7 @@ header {
   }
 
   #intro {
-    background: url('../images/barnyard.png') center top no-repeat;
+    background: url('../images/barnyard.png') center bottom no-repeat;
   }
 
   #logo {
@@ -412,8 +413,8 @@ header {
 
   .orbit-wrapper {
     h1 {
-      font-size: 6em;
-      padding: 2em 0 0;
+      font-size: 3em;
+      padding: 6em 0 0;
     }
   }
   
