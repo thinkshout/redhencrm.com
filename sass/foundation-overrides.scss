@@ -147,7 +147,7 @@ header {
 
 #features {
   background: $tan;
-  padding: 7em 0;
+  padding: 8em 0;
   position: relative;
   
   h2 { 
@@ -195,7 +195,7 @@ header {
 
 #developers {
   background: $tan;
-  padding: 13em 0;
+  padding: 9em 0;
   
   h2 {  
     span {
@@ -232,7 +232,7 @@ header {
 #case-studies,
 #about {
   background: #dfeff9;
-  padding: 13em 0;
+  padding: 9em 0;
   
   h2 {  
     span {
@@ -259,9 +259,10 @@ header {
   }
 }
 
-#testimonials {
+#testimonials,
+#code {
   background: $tan;
-  padding: 13em 0;
+  padding: 9em 0;
   
   h2 {  
     span {
@@ -281,44 +282,46 @@ header {
 
 #about {
   text-align: center;
+}
 
-  #blog-feed, #release-feed {
-    font-family: "Open Sans", sans-serif;
-    margin-top: 3em;
 
-    .gfc-title {
-      color: $darkred;
-      font-size: 2.5em;
-      margin: 2em 0;
+
+#blog-feed, #release-feed {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 3em;
+
+  .gfc-title {
+    color: $darkred;
+    font-size: 2.5em;
+    margin: 2em 0;
+  }
+
+  .gf-result {
+    background: #FFF;
+    padding: 2em;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+    margin: 2em auto;
+
+    .gf-title {
+      font-family: 'Droid Serif', serif;
+      font-size: 1.5em;
+      height: auto;
+      overflow: visible;
+      margin-bottom: 0.75em;
     }
 
-    .gf-result {
-      background: #FFF;
-      padding: 2em;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      border-radius: 10px; /* future proofing */
-      -khtml-border-radius: 10px; /* for old Konqueror browsers */
-      margin: 2em auto;
+    .gf-author {
+      padding: 0.75em;
+      clear: both;
+      margin: 1em 0;
+    }
 
-      .gf-title {
-        font-family: 'Droid Serif', serif;
-        font-size: 1.5em;
-        height: auto;
-        overflow: visible;
-        margin-bottom: 0.75em;
-      }
-
-      .gf-author {
-        padding: 0.75em;
-        clear: both;
-        margin: 1em 0;
-      }
-
-      .gf-snippet {
-        line-height: 1.3em;
-        margin: 1em 0;
-      }
+    .gf-snippet {
+      line-height: 1.3em;
+      margin: 1em 0;
     }
   }
 }
