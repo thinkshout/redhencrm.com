@@ -57,35 +57,30 @@
 	<!---->
   <header>
   	<div class="row">
-		  <div class="twelve columns">
-		    <nav class="top-bar">
-		      <ul>
-		      	<a href="#intro" id="logo"><img src="images/redhencrm-logo.png" alt="RedHen CRM"></a>
-		        <li class="toggle-topbar"><a href="#"></a></li>
-		      </ul>
-		      <!-- Right Nav Section -->
-		      <ul class="right">
-		        <li>
-		          <a href="#intro">Home</a>
-		        </li>
-		        <li >
-		          <a href="#features">Features</a>
-		        </li>
-		        <li>
-		          <a href="#case-studies">Case Studies</a>
-		        </li>
-		        <li>
-		          <a href="#developers">Community</a>
-		        </li>
-		        <li>
-		          <a href="#about">Blog</a>
-		        </li>
-		        <li>
-		          <a href="#code">Get the Code</a>
-		        </li>
-		      </ul>
-		    </nav>
-		  </div>
+		  <a href="#intro" id="logo"><img src="images/redhencrm-logo.png" alt="RedHen CRM"></a>
+		  <li id="toggle"><a href="#"><span class="menu"></span></a></li>
+		  <!-- Right Nav Section -->
+		  <ul class="primary-menu">
+		    <li>
+		      <a href="#intro">Home</a>
+		    </li>
+		    <li >
+		      <a href="#features">Features</a>
+		    </li>
+		    <li>
+		      <a href="#case-studies">Case Studies</a>
+		    </li>
+		    <li>
+		      <a href="#developers">Community</a>
+		    </li>
+		    <li>
+		      <a href="#about">Blog</a>
+		    </li>
+		    <li>
+		      <a href="#code">Get the Code</a>
+		    </li>
+		  </ul>
+		</div>
   </header>
 
   <section id="intro" data-magellan-destination='home'>
@@ -126,21 +121,21 @@
 	  
 	  	  	<div class="row">
 	  	  		<div class="five mobile-four columns feature panel">
-	  	  		  <img  class="feature-icon" src="images/icons/profile2.png">
+	  	  		  <span class="address-book feature-icon"></span>
 	  	  		  <h3>Manage your contacts effortlessly</h3>
 	  	  		</div>
 	  	  		<div class="five mobile-four push-one columns feature panel">
-	  	  		  <img  class="feature-icon" src="images/icons/box.png">
+	  	  		  <span class="cloud-upload feature-icon"></span>
 	  	  		  <h3>Consolidate your commerce, CRM and CMS tools</h3>
 	  	  		</div>
 	  	  	</div>
 	  	  	<div class="row">
 	  	  		<div class="five mobile-four columns feature panel">
-	  	  		  <img  class="feature-icon" src="images/icons/stats.png">
+	  	  		  <span class="bars feature-icon"></span>
 	  	  		  <h3>Customize for your organization's fundraising goals</h3>
 	  	  		</div>
 	  	  		<div class="five mobile-four push-one columns feature panel">
-	  	  		  <img  class="feature-icon" src="images/icons/position.png">
+	  	  		  <span class="meter feature-icon"></span>
 	  	  		  <h3>Track engagement with your supporters</h3>
 	  	  		</div>
 	  	  	</div>
@@ -279,6 +274,7 @@
 	<!-- Load Local Scroll-->
 	<script type="text/javascript" src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
 
+	<script src="javascripts/redhen.js"></script>
   <!-- Application Javascript, safe to override -->
   <script src="javascripts/foundation/app.js"></script>
   <!-- Put this above your </body> tag -->

@@ -93,10 +93,16 @@ section {
 
 }
 
-.toggle-toolbar {
-  a {
-    
-  }
+#toggle {
+  cursor: pointer;
+  display: block;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 20%;
+  font-size: 2em;
+  display: none;
 }
 
 
@@ -112,27 +118,30 @@ header {
   top: 0px;
   z-index: 5;
   background: #FFF;
-}
-
-.top-bar {
   height: 80px;
   margin-bottom: 0;
   padding-bottom: 1em;
-}
 
-.top-bar ul > li {
-  text-align: center;
-}
+  ul.primary-menu {
+    float: right;
+    margin-top: 1em;
+    list-style: none;
+    background: #FFF;
 
-.top-bar ul > li a:not(.button) { 
-  height: 45px; 
-  line-height: 45px;
-  font-family: 'Droid Serif', serif; 
-  font-size: 1.1em;
-}
 
-.top-bar .right {
-  margin-top: 1em;
+    > li {
+      text-align: center;
+      display: inline-block;
+
+      a:not(.button) { 
+        height: 45px; 
+        line-height: 45px;  
+        font-family: 'Droid Serif', serif; 
+        font-size: 1.1em;
+        padding: 1em;
+      }
+    }
+  }
 }
 
 #slides {
@@ -170,26 +179,19 @@ header {
   .feature {
     text-align: center;
 
-    .feature-icon {
-      display: block;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background: $tan;
-      text-align: center;
-      margin: 0 auto;
-      padding: 2em;
-    }
-
     h3 {
       color: $darkred;
     }
   }
 
+  .feature-icon {
+    font-size: 4em;
+  }
+
   .panel {
-    background: rgba(0,0,0,0.2);
+    background: transparent;
     padding: 2em 1em;
-    min-height: 250px;
+    min-height: 150px;
     border: 0;
   }
 
@@ -381,7 +383,38 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
+
+  #toggle {
+    display: block;
+  }
+
+  header { 
+    ul.primary-menu {
+      float: none;
+      display: none;
+      margin-top: 0;
+      list-style: none;
+  
+  
+      > li {
+        text-align: center;
+        display: block;
+        width: 100%;
+  
+        a:not(.button) { 
+          height: 65px;
+          line-height: 34px;
+          font-family: 'Droid Serif', serif;
+          font-size: 1.1em;
+          padding: 1em 0.5em;
+          display: block;
+        }
+      }
+    }
+  }
+
+  ul.prim
   
   #slides { 
     margin: 9em auto; 
