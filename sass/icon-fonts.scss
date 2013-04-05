@@ -27,7 +27,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="your-class-prefix"] {
 */
-.menu, .address-book, .cloud-upload, .bars, .meter {
+.menu, .address-book, .cloud-upload, .bars, .meter, .download {
 	font-family: 'redhen';
 	speak: none;
 	font-style: normal;
@@ -51,4 +51,7 @@ you can use the generic selector below, but it's slower:
 }
 .meter:before {
 	content: "\e004";
+}
+.download:before {
+	content: "\e005";
 }

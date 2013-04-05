@@ -7,7 +7,7 @@ $(function() {
 
   var ww = document.body.clientWidth;
 
-  if (ww < 800) {
+  if (ww < 768) {
   	$('ul.primary-menu a').bind('click', function() {
   		$('ul.primary-menu').slideToggle('400');
   	});

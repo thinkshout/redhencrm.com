@@ -6037,7 +6037,7 @@ table.hide-for-medium {
 body {
   font-family: 'Open Sans', sans-serif;
   color: #222;
-  background: url(../images/body.jpg) top right fixed no-repeat;
+  background: url(../images/body.jpg) top center fixed no-repeat;
   background-size: cover;
 }
 
@@ -6045,47 +6045,47 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  line-height: 1.3;
 }
 
-/* line 30, ../sass/foundation-overrides.scss */
+/* line 31, ../sass/foundation-overrides.scss */
 h1 {
   color: #8c0000;
   font-size: 6em;
 }
 
-/* line 35, ../sass/foundation-overrides.scss */
+/* line 36, ../sass/foundation-overrides.scss */
 h2 {
   color: #8c0000;
 }
 
-/* line 39, ../sass/foundation-overrides.scss */
+/* line 40, ../sass/foundation-overrides.scss */
 h3 {
   color: #222;
 }
 
-/* line 44, ../sass/foundation-overrides.scss */
+/* line 45, ../sass/foundation-overrides.scss */
 h4 {
   color: #eaa700;
   line-height: 1.4em;
 }
 
-/* line 50, ../sass/foundation-overrides.scss */
+/* line 51, ../sass/foundation-overrides.scss */
 input[type="submit"],
 a.button {
   font-family: 'Droid Serif', serif;
 }
 
 /* Header */
-/* line 56, ../sass/foundation-overrides.scss */
+/* line 57, ../sass/foundation-overrides.scss */
 .tag {
   text-align: center;
   padding: 1em 0 0;
 }
 
-/* line 61, ../sass/foundation-overrides.scss */
+/* line 62, ../sass/foundation-overrides.scss */
 section {
   position: relative;
-  text-align: center;
   display: block;
   height: 100%;
   width: 100%;
@@ -6280,34 +6280,34 @@ header ul.primary-menu > li.active a:not(.button) {
 
 /* line 263, ../sass/foundation-overrides.scss */
 #case-studies,
-#about {
+#blog, footer {
   background: #dfeff9;
   padding: 9em 0;
 }
 /* line 268, ../sass/foundation-overrides.scss */
 #case-studies h2 span,
-#about h2 span {
+#blog h2 span, footer h2 span {
   color: #8c0000;
   background: #dfeff9;
 }
 /* line 274, ../sass/foundation-overrides.scss */
 #case-studies h2:before,
-#about h2:before {
+#blog h2:before, footer h2:before {
   border: 1px solid #8c0000;
 }
 /* line 278, ../sass/foundation-overrides.scss */
 #case-studies h3,
-#about h3 {
+#blog h3, footer h3 {
   font-family: 'Droid Serif', serif;
 }
 /* line 282, ../sass/foundation-overrides.scss */
 #case-studies h4,
-#about h4 {
+#blog h4, footer h4 {
   color: #333;
 }
 /* line 286, ../sass/foundation-overrides.scss */
 #case-studies img,
-#about img {
+#blog img, footer img {
   border: 5px solid #e0e0e0;
   text-align: center;
 }
@@ -6340,6 +6340,11 @@ header ul.primary-menu > li.active a:not(.button) {
   text-align: center;
 }
 
+/* line 317, ../sass/foundation-overrides.scss */
+#blog {
+  text-align: left;
+}
+
 /* line 319, ../sass/foundation-overrides.scss */
 #blog-feed, #release-feed {
   font-family: "Open Sans", sans-serif;
@@ -6352,6 +6357,10 @@ header ul.primary-menu > li.active a:not(.button) {
   margin: 2em 0;
 }
 /* line 329, ../sass/foundation-overrides.scss */
+#blog-feed .gfc-resultsHeader, #release-feed .gfc-resultsHeader {
+  border-bottom: 0;
+}
+/* line 333, ../sass/foundation-overrides.scss */
 #blog-feed .gf-result, #release-feed .gf-result {
   background: #FFF;
   padding: 2em;
@@ -6363,49 +6372,27 @@ header ul.primary-menu > li.active a:not(.button) {
   /* for old Konqueror browsers */
   margin: 2em auto;
 }
-/* line 338, ../sass/foundation-overrides.scss */
+/* line 344, ../sass/foundation-overrides.scss */
 #blog-feed .gf-result .gf-title, #release-feed .gf-result .gf-title {
   font-family: 'Droid Serif', serif;
-  font-size: 1.5em;
+  font-size: 1.125em;
   height: auto;
   overflow: visible;
   margin-bottom: 0.75em;
 }
-/* line 346, ../sass/foundation-overrides.scss */
+/* line 352, ../sass/foundation-overrides.scss */
 #blog-feed .gf-result .gf-author, #release-feed .gf-result .gf-author {
-  padding: 0.75em;
+  padding: 0.75em 0;
   clear: both;
   margin: 1em 0;
 }
-/* line 352, ../sass/foundation-overrides.scss */
+/* line 358, ../sass/foundation-overrides.scss */
 #blog-feed .gf-result .gf-snippet, #release-feed .gf-result .gf-snippet {
   line-height: 1.3em;
   margin: 1em 0;
 }
 
-/* line 359, ../sass/foundation-overrides.scss */
-footer {
-  background: #194328;
-}
-
-/* line 363, ../sass/foundation-overrides.scss */
-#mask {
-  /* Set rules to fill background  
-  min-height: 100%; 
-  min-width: 100%; 
-  */
-  /* Set up proportionate scaling */
-  width: 100%;
-  /* Set up positioning */
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* line 381, ../sass/foundation-overrides.scss */
+/* line 366, ../sass/foundation-overrides.scss */
 .orbit-wrapper {
   z-index: 1;
   position: relative;
@@ -6414,17 +6401,17 @@ footer {
   text-align: center;
   overflow: visible;
 }
-/* line 389, ../sass/foundation-overrides.scss */
+/* line 374, ../sass/foundation-overrides.scss */
 .orbit-wrapper h1 {
   padding-top: 0;
   font-family: 'Droid Serif', serif;
   color: #8c0000;
 }
-/* line 395, ../sass/foundation-overrides.scss */
+/* line 380, ../sass/foundation-overrides.scss */
 .orbit-wrapper p {
   font-size: 2em;
 }
-/* line 399, ../sass/foundation-overrides.scss */
+/* line 384, ../sass/foundation-overrides.scss */
 .orbit-wrapper .slider-nav span {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -6433,7 +6420,7 @@ footer {
   -o-transition: opacity 400ms;
   transition: opacity 400ms;
 }
-/* line 400, ../sass/foundation-overrides.scss */
+/* line 385, ../sass/foundation-overrides.scss */
 .orbit-wrapper:hover .slider-nav span {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -6441,25 +6428,25 @@ footer {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
-  /* line 409, ../sass/foundation-overrides.scss */
+  /* line 394, ../sass/foundation-overrides.scss */
   #toggle {
     display: block;
   }
 
-  /* line 414, ../sass/foundation-overrides.scss */
+  /* line 399, ../sass/foundation-overrides.scss */
   header ul.primary-menu {
     float: none;
     display: none;
     margin-top: 0;
     list-style: none;
   }
-  /* line 421, ../sass/foundation-overrides.scss */
+  /* line 406, ../sass/foundation-overrides.scss */
   header ul.primary-menu > li {
     text-align: center;
     display: block;
     width: 100%;
   }
-  /* line 426, ../sass/foundation-overrides.scss */
+  /* line 411, ../sass/foundation-overrides.scss */
   header ul.primary-menu > li a:not(.button) {
     height: 65px;
     line-height: 34px;
@@ -6469,46 +6456,46 @@ footer {
     display: block;
   }
 
-  /* line 440, ../sass/foundation-overrides.scss */
+  /* line 425, ../sass/foundation-overrides.scss */
   ul.prim
   #slides {
     margin: 9em auto;
     padding: 0 1em;
   }
 
-  /* line 445, ../sass/foundation-overrides.scss */
+  /* line 430, ../sass/foundation-overrides.scss */
   #logo {
     float: none;
   }
 
-  /* line 450, ../sass/foundation-overrides.scss */
+  /* line 435, ../sass/foundation-overrides.scss */
   .orbit-wrapper h1 {
     font-size: 3em;
     padding-top: 3em;
   }
-  /* line 454, ../sass/foundation-overrides.scss */
+  /* line 439, ../sass/foundation-overrides.scss */
   .orbit-wrapper p {
     font-size: 1.2em;
   }
 
-  /* line 461, ../sass/foundation-overrides.scss */
+  /* line 446, ../sass/foundation-overrides.scss */
   section h2 span {
-    font-size: 1em;
+    font-size: 0.75em;
     line-height: 1.8;
   }
 
-  /* line 468, ../sass/foundation-overrides.scss */
+  /* line 453, ../sass/foundation-overrides.scss */
   #share, #devs {
     padding: 5em 2em;
   }
 }
 @media all and (min-width: 480px) {
-  /* line 476, ../sass/foundation-overrides.scss */
+  /* line 461, ../sass/foundation-overrides.scss */
   #devs {
     margin-right: 3em;
   }
 
-  /* line 479, ../sass/foundation-overrides.scss */
+  /* line 464, ../sass/foundation-overrides.scss */
   .orbit-wrapper h1 {
     font-size: 5em;
     padding: 1.5em 0 0;
