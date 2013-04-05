@@ -38,7 +38,7 @@
             // Grab the blog feed.
             var feedControl = new google.feeds.FeedControl();
             feedControl.setNumEntries(5);
-            feedControl.addFeed("http://thinkshout.com/taxonomy/term/46/feed", "From the Blog");
+            feedControl.addFeed("http://thinkshout.com/taxonomy/term/46/feed");
             feedControl.draw(document.getElementById("blog-feed"));
 
             // Releases feed. Note we only want one item.
@@ -77,7 +77,7 @@
 		          <a href="#developers">Community</a>
 		        </li>
 		        <li>
-		          <a href="#about">About</a>
+		          <a href="#about">Blog</a>
 		        </li>
 		        <li>
 		          <a href="#code">Get the Code</a>
@@ -217,14 +217,8 @@
   <section id="about" data-magellan-destination='about'>
 	  <div class="row">
 	  	<div class="eight mobile-four columns centered">
-	  	  <h2><span>About RedHen</span></h2>
+	  	  <h2><span>From The Blog</span></h2>
 	  	</div>
-	  </div>
-	  <div class="row">
-	  	<div class="six columns centered">
-	  	    <h4>RedHen CRM is a project of ThinkShout.  Helping progressive organizations achieve their goals using open source technologies, ThinkShout treats their business and nonprofit clients as partners. Our motivation comes from knowing we make the world a better place.See what ThinkShout is doing with RedHen.</h4>
-	  	    <a class="large button" href="http://thinkshout.com/blog/category/redhen" alt="Learn more about RedHen">Learn more about RedHen</a>
-	  	  </div>
 	  </div>
     <div class="row">
     	<div class="six mobile-four columns centered">
@@ -233,7 +227,7 @@
     </div>
   </section>
 
-  
+
   <section id="code" data-magellan-destination='code'>
 	  <div class="row">
 	  	<div class="eight mobile-four columns centered">
@@ -246,6 +240,16 @@
 	  	</div>
 	  </div>
   </section>
+
+  <footer>
+  	<div class="row">
+  		<div class="six columns centered">
+  			<h2>About RedHen</h2>
+	  	  <h4>RedHen CRM is a project of ThinkShout.  Helping progressive organizations achieve their goals using open source technologies, ThinkShout treats their business and nonprofit clients as partners. Our motivation comes from knowing we make the world a better place.See what ThinkShout is doing with RedHen.</h4>
+	  	  <a class="large button" href="http://thinkshout.com/blog/category/redhen" alt="Learn more about RedHen">Learn more about RedHen</a>
+	  	</div>
+  	</div>	
+  </footer>	
 
 	<!-- Included JS Files (Uncompressed) -->
 	<script src="javascripts/foundation/jquery.js"></script>
