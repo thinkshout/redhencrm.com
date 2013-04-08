@@ -6144,7 +6144,7 @@ footer h2:before {
   position: absolute;
   right: 0;
   top: 20px;
-  right: 1em;
+  right: 0.5em;
   font-size: 2em;
   display: none;
 }
