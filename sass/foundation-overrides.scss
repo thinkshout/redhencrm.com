@@ -71,6 +71,7 @@ footer {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  z-index: 200;
 
   h2 {
     text-align: center;
@@ -260,6 +261,7 @@ header {
     height: 475px;
     width: 365px;
     float: left;
+    margin: 0 3em;
   }
 
 
@@ -387,6 +389,7 @@ header {
   margin: 0 auto;
   text-align: center;
   overflow: visible;
+  padding: 0 2em;
 
   h1 {
     padding-top: 0;
@@ -402,7 +405,28 @@ header {
   &:hover .slider-nav span { @include opacity(1); }
 }
 
+@media only screen and (max-width: 480px) {
+  #developers {
+    #devs, #share {
+      margin: 0 0;
+    }
+  }
 
+  #redhen-id {
+    display: block;
+    bottom: 1em;
+    left: 1em;
+  }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #developers {
+    #share, #devs {
+      margin: 0 30%;
+    }
+  }
+}
 
 /* MEDIA QUERIES */
 
@@ -411,10 +435,6 @@ header {
   #toggle {
     display: block;
   }
-
-  #redhen-id {
-    display: none;
-  }  
 
   header { 
     ul.primary-menu {
@@ -479,7 +499,6 @@ header {
 
 @media all and (min-width: 480px) {
 
-  #devs {margin-right: 3em; }
 
   .orbit-wrapper {
     h1 {
