@@ -6325,31 +6325,36 @@ header ul.primary-menu > li.active a:not(.button) {
   border: 5px solid #e0e0e0;
   text-align: center;
 }
+/* line 301, ../sass/foundation-overrides.scss */
+#case-studies .row,
+#blog .row, footer .row {
+  margin-bottom: 1.5em;
+}
 
-/* line 303, ../sass/foundation-overrides.scss */
+/* line 307, ../sass/foundation-overrides.scss */
 #testimonials,
 #code {
   background: #c5c3b2;
   padding: 9em 0;
 }
-/* line 308, ../sass/foundation-overrides.scss */
+/* line 312, ../sass/foundation-overrides.scss */
 #testimonials h2 span,
 #code h2 span {
   color: #8c0000;
   background: #c5c3b2;
 }
-/* line 314, ../sass/foundation-overrides.scss */
+/* line 318, ../sass/foundation-overrides.scss */
 #testimonials h2:before,
 #code h2:before {
   border: 1px solid #8c0000;
 }
-/* line 318, ../sass/foundation-overrides.scss */
+/* line 322, ../sass/foundation-overrides.scss */
 #testimonials h4,
 #code h4 {
   color: #333;
 }
 
-/* line 324, ../sass/foundation-overrides.scss */
+/* line 328, ../sass/foundation-overrides.scss */
 #code .panel {
   background: #FFF;
   padding: 2em;
@@ -6361,32 +6366,32 @@ header ul.primary-menu > li.active a:not(.button) {
   /* for old Konqueror browsers */
 }
 
-/* line 334, ../sass/foundation-overrides.scss */
+/* line 338, ../sass/foundation-overrides.scss */
 #about {
   text-align: center;
 }
 
-/* line 338, ../sass/foundation-overrides.scss */
+/* line 342, ../sass/foundation-overrides.scss */
 #blog {
   text-align: left;
 }
 
-/* line 340, ../sass/foundation-overrides.scss */
+/* line 344, ../sass/foundation-overrides.scss */
 #blog-feed, #release-feed {
   font-family: "Open Sans", sans-serif;
   margin-top: 3em;
 }
-/* line 344, ../sass/foundation-overrides.scss */
+/* line 348, ../sass/foundation-overrides.scss */
 #blog-feed .gfc-title, #release-feed .gfc-title {
   color: #8c0000;
   font-size: 2.5em;
   margin: 2em 0;
 }
-/* line 350, ../sass/foundation-overrides.scss */
+/* line 354, ../sass/foundation-overrides.scss */
 #blog-feed .gfc-resultsHeader, #release-feed .gfc-resultsHeader {
   border-bottom: 0;
 }
-/* line 354, ../sass/foundation-overrides.scss */
+/* line 358, ../sass/foundation-overrides.scss */
 #blog-feed .gf-result, #release-feed .gf-result {
   background: #FFF;
   padding: 2em;
@@ -6398,7 +6403,7 @@ header ul.primary-menu > li.active a:not(.button) {
   /* for old Konqueror browsers */
   margin: 2em auto;
 }
-/* line 365, ../sass/foundation-overrides.scss */
+/* line 369, ../sass/foundation-overrides.scss */
 #blog-feed .gf-result .gf-title, #release-feed .gf-result .gf-title {
   font-family: 'Droid Serif', serif;
   font-size: 1.125em;
@@ -6406,19 +6411,19 @@ header ul.primary-menu > li.active a:not(.button) {
   overflow: visible;
   margin-bottom: 0.75em;
 }
-/* line 373, ../sass/foundation-overrides.scss */
+/* line 377, ../sass/foundation-overrides.scss */
 #blog-feed .gf-result .gf-author, #release-feed .gf-result .gf-author {
   padding: 0.75em 0;
   clear: both;
   margin: 1em 0;
 }
-/* line 379, ../sass/foundation-overrides.scss */
+/* line 383, ../sass/foundation-overrides.scss */
 #blog-feed .gf-result .gf-snippet, #release-feed .gf-result .gf-snippet {
   line-height: 1.3em;
   margin: 1em 0;
 }
 
-/* line 387, ../sass/foundation-overrides.scss */
+/* line 391, ../sass/foundation-overrides.scss */
 .orbit-wrapper {
   z-index: 1;
   position: relative;
@@ -6428,17 +6433,17 @@ header ul.primary-menu > li.active a:not(.button) {
   overflow: visible;
   padding: 0 2em;
 }
-/* line 396, ../sass/foundation-overrides.scss */
+/* line 400, ../sass/foundation-overrides.scss */
 .orbit-wrapper h1 {
   padding-top: 0;
   font-family: 'Droid Serif', serif;
   color: #8c0000;
 }
-/* line 402, ../sass/foundation-overrides.scss */
+/* line 406, ../sass/foundation-overrides.scss */
 .orbit-wrapper p {
   font-size: 2em;
 }
-/* line 406, ../sass/foundation-overrides.scss */
+/* line 410, ../sass/foundation-overrides.scss */
 .orbit-wrapper .slider-nav span {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -6447,19 +6452,19 @@ header ul.primary-menu > li.active a:not(.button) {
   -o-transition: opacity 400ms;
   transition: opacity 400ms;
 }
-/* line 407, ../sass/foundation-overrides.scss */
+/* line 411, ../sass/foundation-overrides.scss */
 .orbit-wrapper:hover .slider-nav span {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 412, ../sass/foundation-overrides.scss */
+  /* line 416, ../sass/foundation-overrides.scss */
   #developers #devs, #developers #share {
     margin: 0 0;
   }
 
-  /* line 417, ../sass/foundation-overrides.scss */
+  /* line 421, ../sass/foundation-overrides.scss */
   #redhen-id {
     display: none;
     bottom: -4em;
@@ -6467,32 +6472,32 @@ header ul.primary-menu > li.active a:not(.button) {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  /* line 427, ../sass/foundation-overrides.scss */
+  /* line 431, ../sass/foundation-overrides.scss */
   #developers #share, #developers #devs {
     margin: 0 30%;
   }
 }
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
-  /* line 437, ../sass/foundation-overrides.scss */
+  /* line 441, ../sass/foundation-overrides.scss */
   #toggle {
     display: block;
   }
 
-  /* line 442, ../sass/foundation-overrides.scss */
+  /* line 446, ../sass/foundation-overrides.scss */
   header ul.primary-menu {
     float: none;
     display: none;
     margin-top: 0;
     list-style: none;
   }
-  /* line 449, ../sass/foundation-overrides.scss */
+  /* line 453, ../sass/foundation-overrides.scss */
   header ul.primary-menu > li {
     text-align: center;
     display: block;
     width: 100%;
   }
-  /* line 454, ../sass/foundation-overrides.scss */
+  /* line 458, ../sass/foundation-overrides.scss */
   header ul.primary-menu > li a:not(.button) {
     height: 65px;
     line-height: 34px;
@@ -6502,41 +6507,41 @@ header ul.primary-menu > li.active a:not(.button) {
     display: block;
   }
 
-  /* line 468, ../sass/foundation-overrides.scss */
+  /* line 472, ../sass/foundation-overrides.scss */
   ul.prim
   #slides {
     margin: 9em auto;
     padding: 0 1em;
   }
 
-  /* line 473, ../sass/foundation-overrides.scss */
+  /* line 477, ../sass/foundation-overrides.scss */
   #logo {
     float: none;
   }
 
-  /* line 478, ../sass/foundation-overrides.scss */
+  /* line 482, ../sass/foundation-overrides.scss */
   .orbit-wrapper h1 {
     font-size: 3em;
     padding-top: 3em;
   }
-  /* line 482, ../sass/foundation-overrides.scss */
+  /* line 486, ../sass/foundation-overrides.scss */
   .orbit-wrapper p {
     font-size: 1.2em;
   }
 
-  /* line 489, ../sass/foundation-overrides.scss */
+  /* line 493, ../sass/foundation-overrides.scss */
   section h2 span {
     font-size: 0.75em;
     line-height: 1.8;
   }
 
-  /* line 496, ../sass/foundation-overrides.scss */
+  /* line 500, ../sass/foundation-overrides.scss */
   #share, #devs {
     padding: 5em 2em;
   }
 }
 @media all and (min-width: 480px) {
-  /* line 506, ../sass/foundation-overrides.scss */
+  /* line 510, ../sass/foundation-overrides.scss */
   .orbit-wrapper h1 {
     font-size: 5em;
     padding: 2.5em 0 0;
