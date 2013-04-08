@@ -6142,7 +6142,7 @@ footer h2:before {
   position: absolute;
   right: 0;
   top: 20px;
-  width: 20%;
+  right: 1em;
   font-size: 2em;
   display: none;
 }
@@ -6460,7 +6460,7 @@ header ul.primary-menu > li.active a:not(.button) {
   /* line 415, ../sass/foundation-overrides.scss */
   #redhen-id {
     display: block;
-    bottom: 1em;
+    bottom: -4em;
     left: 1em;
   }
 }
