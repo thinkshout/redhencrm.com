@@ -6459,7 +6459,7 @@ header ul.primary-menu > li.active a:not(.button) {
 
   /* line 415, ../sass/foundation-overrides.scss */
   #redhen-id {
-    display: block;
+    display: none;
     bottom: -4em;
     left: 1em;
   }
