@@ -39,7 +39,7 @@
             // Grab the blog feed.
             var feedControl = new google.feeds.FeedControl();
             feedControl.setNumEntries(5);
-            feedControl.addFeed("http://thinkshout.com/taxonomy/term/46/feed");
+            feedControl.addFeed("http://thinkshout.com/blog/category/redhen/rss.xml");
             feedControl.draw(document.getElementById("blog-feed"));
 
             // Releases feed. Note we only want one item.
@@ -86,26 +86,26 @@
   <section id="intro" data-magellan-destination='home'>
 		<div id="slides">
 		  <!-- First Band (Slider) -->
-  		  <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->  
+  		  <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->
   		  <div id="featured">
-  		    <div>    
+  		    <div>
   		    	<h1>Open Source</h1>
     				<p>RedHen is free, web-based software for tracking your organization’s relationships.</p>
     				<a class="button large" href="#release-feed">Get the code</a>
     			</div>
-    			<div>    
+    			<div>
   		    	<h1>Engagement</h1>
     				<p>Score and analyze interactions to learn more about your visitors.</p>
     			</div>
-    			<div>    
+    			<div>
   		    	<h1>Enterprise Integrations</h1>
     				<p>Simplify integration between Drupal and your enterprise CRM solution.</p>
     			</div>
-    			<div>    
+    			<div>
   		    	<h1>Association Management</h1>
     				<p>Utilize robust membership and access control features for your constituents.</p>
     			</div>
-    			<div>    
+    			<div>
   		    	<h1>Fundraising</h1>
     				<p>Drive successful online campaigns to improve your ability to raise money online.</p>
     			</div>
@@ -118,7 +118,7 @@
 	  	<div class="twelve columns">
 	  	  <div class="eight columns centered">
 	  	  	<h2><span>Features</span></h2>
-	  
+
 	  	  	<div class="row">
 	  	  		<div class="five mobile-four columns feature">
 	  	  		  <div class="feature-icon"><span class="address-book"></span></div>
@@ -144,14 +144,14 @@
 	  </div>
 	</section>
 	<!-- End Main -->
-	
+
 	<section id="case-studies" data-magellan-destination='case-studies'>
 	  <div class="row">
 	  	<div class="eight mobile-four columns centered">
 	  	  <h2><span>Case Studies</span></h2>
 	  	</div>
 	  </div>
-	  <div class="row">
+	  <!-- <div class="row">
 	  	<div class="twelve columns">
 	  		<div class="four mobile-four columns push-two">
 	  			<img src="images/mie.jpg" alt="Mission Investors Exchange">
@@ -162,7 +162,7 @@
 	  		  <a class="large button" href="http://thinkshout.com/portfolio/mission-investors-exchange" alt="MIE's using RedHen">Read the Full Story</a>
 	  		</div>
 	  	</div>
-	  </div>
+	  </div> -->
 	  	  <div class="row">
 	  	<div class="twelve columns">
 	  		<div class="four mobile-four columns push-two">
@@ -176,7 +176,7 @@
 	  	</div>
 	  </div>
   </section>
-  
+
 	<section id="developers" data-magellan-destination='community'>
 	  <div class="row">
 	  	<div class="eight mobile-four columns centered">
@@ -185,7 +185,7 @@
 	  </div>
 	  <div class="row">
 	  	<div class="eight columns centered">
-	  	  <div id="devs"> 
+	  	  <div id="devs">
 	  	  	<h3>Developers</h3>
 	  	    <h4>RedHen CRM is fully open-sourced with the code living in the RedHen project on Drupal.org.</h4>
 	  	    <a class="medium button" href="http://drupal.org/project/redhen" alt="RedHen CRM Drupal Project Page">Get Started Today</a>
@@ -196,18 +196,18 @@
 	  	    <!-- Begin MailChimp Signup Form -->
 	  	    <script type="text/javascript">
 	  	    	<!--//--><![CDATA[// ><!--
-	  	    	
+
 	  	    	// delete this script tag and use a "div.mce_inline_error{ XXX !important}" selector
 	  	    	// or fill this in and it will be inlined when errors are generated
 	  	    	var mc_custom_error_style = '';
-	  	    	
+
 	  	    	//--><!]]>
 	  	    </script>
 	  	    <div id="mc_embed_signup">
 	  	      <form action="http://redhencrm.us2.list-manage.com/subscribe/post?u=6d259ef9f5f7148c09d1594e6&amp;id=00d0505a6f" method="post" id="mc  	-  embedded-		subscribe-form			" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 	  	        <div class="mc-field-group">
 	  	          <input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" size="30" /></div>
-	  	          <div id="mce-responses">	
+	  	          <div id="mce-responses">
 	  	          <div class="response" id="mce-error-response" style="display:none"></div>
 	  	          <div class="response" id="mce-success-response" style="display:none"></div>
 	  	        </div>
@@ -244,7 +244,7 @@
 	  </div>
 	  <div class="row">
 	  	<div class="six columns centered">
-	  	  <div id="release-feed"></div>	
+	  	  <div id="release-feed"></div>
 	  	</div>
 	  </div>
 	  <div class="row">
@@ -253,14 +253,14 @@
 	  			<a href="http://ftp.drupal.org/files/projects/redhen-7.x-1.2.tar.gz"><span class="download">Tarball</span></a></li>
 	  		</div>
 	  	</div>
-	  </div>	
+	  </div>
 	  <div class="row">
 	  	<div class="six columns centered">
 	  		<div class="panel">
 	  			<code>git clone http://git.drupal.org/project/redhen.git</code>
 	  		</div>
 	  	</div>
-	  </div>	
+	  </div>
   </section>
 
   <footer>
@@ -270,8 +270,8 @@
 	  	  <p>RedHen CRM is a project of <a href="http://thinkshout.com">ThinkShout</a>.  Helping progressive organizations achieve their goals using open source technologies, ThinkShout treats their business and nonprofit clients as partners. Our motivation comes from knowing we make the world a better place. See what ThinkShout is doing with RedHen.</p>
 	  	  <a class="large button" href="http://thinkshout.com/blog/category/redhen" alt="Learn more about RedHen">Learn more about RedHen</a>
 	  	</div>
-  	</div>	
-  </footer>	
+  	</div>
+  </footer>
 
   <div id="redhen-id"><img src="images/redhen-lg.png"></div>
 
@@ -328,7 +328,7 @@
         fluid: '16x6'                        // or set a aspect ratio for content slides (ex: '4x3')
       });
 
-	    //$('#nav').magellan();	
+	    //$('#nav').magellan();
 	    $('.top-bar a').bind('click', function() {
         $('.top-bar').removeClass('expanded');
       });
